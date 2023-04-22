@@ -1,7 +1,7 @@
 import "./index.css";
 
 const Classic = () => {
-    return (<></>);
+    return (<>Welcome to classic!</>);
 }
 
 export default Classic;

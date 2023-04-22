@@ -1,1 +1,50 @@
-/*# sourceMappingURL=index.css.map */
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: hsl(0, 0%, 90%);
+  font-size: 56px;
+}
+
+.buttons {
+  margin-top: 200px;
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 28px;
+  border: none;
+  border-radius: 10px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn_classic {
+  background: linear-gradient(to right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  color: hsl(0, 0%, 90%);
+  transition: all 0.2s ease-in;
+}
+.btn_classic:hover {
+  opacity: 0.85;
+}
+.btn_bonus {
+  background: linear-gradient(to right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  color: hsl(0, 0%, 90%);
+  transition: all 0.2s ease-in;
+}
+.btn_bonus:hover {
+  opacity: 0.85;
+}/*# sourceMappingURL=index.css.map */

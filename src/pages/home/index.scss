@@ -1,0 +1,57 @@
+@import "./../../assets/colors/index.scss";
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background: $radialGradient;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: $text;
+    font-size: 56px;
+}
+
+.buttons {
+    margin-top: 200px;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 28px;
+    border: none;
+    border-radius: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &_classic {
+        background: $scissorsGradient;
+        color: $text;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+
+    &_bonus {
+        background: $rockGradient;
+        color: $text;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+}

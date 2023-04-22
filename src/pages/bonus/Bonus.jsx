@@ -1,7 +1,7 @@
 import "./index.css";
 
 const Bonus = () => {
-    return (<></>);
+    return (<>Welcome to bonus!</>);
 }
 
 export default Bonus;
