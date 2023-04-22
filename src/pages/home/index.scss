@@ -1,15 +1,5 @@
 @import "./../../assets/colors/index.scss";
 
-.background {
-    width: 100vw;
-    height: 100vh;
-    background: $radialGradient;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .title {
     color: $text;
     font-size: 56px;
@@ -22,7 +12,7 @@
     justify-content: space-between;
 }
 
-.btn {
+.button {
     width: 180px;
     height: 60px;
     text-transform: uppercase;

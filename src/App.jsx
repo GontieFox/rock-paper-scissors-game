@@ -8,11 +8,13 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
-          <Route path="/classic" element={<Classic />} />
-          <Route path="/bonus" element={<Bonus />} />
-          <Route path="/" element={<Home />} />
-        </Routes>
+        <div className="background">
+          <Routes>
+            <Route path="/classic" element={<Classic />} />
+            <Route path="/bonus" element={<Bonus />} />
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );
