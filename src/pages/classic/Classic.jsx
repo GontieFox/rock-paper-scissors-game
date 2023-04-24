@@ -1,30 +1,31 @@
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { openPopup, closePopup } from "../../redux/reducers/popupSlice";
 import "./index.css";
 import logo from "./../../assets/images/logo.svg";
 import triangle from "./../../assets/images/bg-triangle.svg";
 import paper from "./../../assets/images/icon-paper.svg";
 import scissors from "./../../assets/images/icon-scissors.svg";
 import rock from "./../../assets/images/icon-rock.svg";
-import rules from "./../../assets/images/image-rules.svg";
+import PopupClassic from "../../components/popupClassic/PopupClassic";
 
 const Classic = () => {
-    const [popupOpened, setPopupOpened] = useState(false);
+    const popupOpened = useSelector((state) => state.popup.opened);
+    const dispatch = useDispatch();
+
 
     const handlePopupOpened = () => {
-        setPopupOpened(!popupOpened);
+        if (popupOpened) {
+            dispatch(closePopup());
+        } else {
+            dispatch(openPopup());
+        }
     }
 
     return (
         <>
-            <div className={`popup-rules ${popupOpened ? "popup-rules_opened" : ""}`} id="rules">
-                <div className="popup-rules__container">
-                    <div className="popup-rules__section">
-                        <h2 className="popup-rules__title">Rules</h2>
-                        <button className="popup-rules__close-btn" id="close-btn" onClick={handlePopupOpened} />
-                    </div>
-                    <img src={rules} alt="rules" className="popup-rules__image" />
-                </div>
-            </div>
+
+            <PopupClassic isOpen={popupOpened} onClose={handlePopupOpened} />
 
             <div className="border">
                 <img src={logo} alt="logo" className="rules-logo" />

@@ -1,55 +1,5 @@
 @import "./../../assets/colors/index.scss";
 
-.popup-rules {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.5s, opacity 0.335s linear;
-    z-index: 3;
-
-    &_opened {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    &__container {
-        background-color: $white;
-        padding: 30px;
-        border-radius: 10px;
-    }
-
-    &__section {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 40px;
-    }
-
-    &__title {
-        text-transform: uppercase;
-        color: $darkText;
-    }
-
-    &__close-btn {
-        background: url(./../../assets/images/icon-close.svg);
-        width: 20px;
-        height: 20px;
-        border: none;
-        transition: all 0.2s ease-in;
-
-        &:hover {
-            cursor: pointer;
-            opacity: 0.8;
-        }
-    }
-}
-
 .border {
     width: 600px;
     height: 10 0px;
