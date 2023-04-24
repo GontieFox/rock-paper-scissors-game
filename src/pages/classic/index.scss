@@ -133,6 +133,11 @@
     left: 130px;
     top: -30px;
     box-shadow: 0 8px 0 0 $paperShadow;
+
+    &:hover {
+        background: $paperHover;
+        box-shadow: 0 8px 0 0 $paperShadowHover;
+    }
 }
 
 .btn-rock {
@@ -141,6 +146,11 @@
     left: 90px;
     top: 150px;
     box-shadow: 0 8px 0 0 $rockShadow;
+    
+    &:hover {
+        background: $rockHover;
+        box-shadow: 0 8px 0 0 $rockShadowHover;
+    }
 }
 
 .btn-scissors {
@@ -149,6 +159,11 @@
     left: 50px;
     top: -30px;
     box-shadow: 0 8px 0 0 $scissorsShadow;
+
+    &:hover {
+        background: $scissorsHover;
+        box-shadow: 0 8px 0 0 $scissorsShadowHover;
+    }
 }
 
 .rules-btn {

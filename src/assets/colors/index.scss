@@ -11,6 +11,14 @@ $rockShadow: hsl(349, 68%, 38%);
 $scissorsShadow: hsl(40, 83%, 38%);
 $backgroundShadow: hsl(0, 0%, 85%);
 
+// Hover
+$scissorsHover: linear-gradient(to bottom, hsl(39, 88%, 44%), hsl(40, 76%, 42%));
+$scissorsShadowHover: hsl(40, 84%, 33%);
+$paperHover: linear-gradient(to bottom, hsl(230, 66%, 55%), hsl(230, 56%, 54%));
+$paperShadowHover: hsl(230, 65%, 38%);
+$rockHover: linear-gradient(to bottom, hsl(349, 66%, 45%), hsl(349, 55%, 47%));
+$rockShadowHover: hsl(349, 68%, 31%);
+
 // Text
 $darkText: hsl(229, 25%, 31%);
 $scoreText: hsl(229, 64%, 46%);
