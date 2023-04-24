@@ -16,7 +16,7 @@ const Classic = () => {
 
     return (
         <>
-            <div className={`${popupOpened ? "popup-rules_opened" : ""} popup-rules`} id="rules">
+            <div className={`popup-rules ${popupOpened ? "popup-rules_opened" : ""}`} id="rules">
                 <div className="popup-rules__container">
                     <div className="popup-rules__section">
                         <h2 className="popup-rules__title">Rules</h2>

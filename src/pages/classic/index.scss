@@ -87,6 +87,7 @@
     position: relative;
     width: 600px;
     height: 300px;
+    margin-bottom: 150px;
 
     &__triangle {
         position: absolute;
@@ -167,5 +168,17 @@
     &:hover {
         opacity: 0.8;
         cursor: pointer;
+    }
+}
+
+@media (max-height: 768px) {
+    .game {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-heigth: 680px) {
+    .game {
+        margin-bottom: 0;
     }
 }
