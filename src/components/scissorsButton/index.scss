@@ -1,0 +1,39 @@
+@import "./../../assets/colors/index.scss";
+
+.btn-scissors {
+    width: 145px;
+    height: 140px;
+    border-radius: 100px;
+    border: none;
+    background: $scissorsGradient;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 8px 0 0 $scissorsShadow;
+
+    &_position {
+        left: 50px;
+        top: -30px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background: $scissorsHover;
+        box-shadow: 0 8px 0 0 $scissorsShadowHover;
+    }
+
+    &__background {
+        width: 100px;
+        height: 100px;
+        background-color: $white;
+        border-radius: 100px;
+        margin: auto;
+        box-shadow: 0 -4px 0 2px $backgroundShadow;
+    }
+
+    &__image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

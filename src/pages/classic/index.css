@@ -43,68 +43,6 @@
   transform: translate(-50%, -50%);
 }
 
-.btn {
-  width: 145px;
-  height: 140px;
-  border-radius: 100px;
-  position: relative;
-  z-index: 2;
-  border: none;
-}
-.btn:hover {
-  cursor: pointer;
-}
-.btn__background {
-  width: 100px;
-  height: 100px;
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 100px;
-  margin: auto;
-  box-shadow: 0 -4px 0 2px hsl(0, 0%, 85%);
-}
-.btn__image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.btn-paper {
-  background: linear-gradient(to bottom, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
-  position: relative;
-  left: 130px;
-  top: -30px;
-  box-shadow: 0 8px 0 0 hsl(230, 65%, 45%);
-}
-.btn-paper:hover {
-  background: linear-gradient(to bottom, hsl(230, 66%, 55%), hsl(230, 56%, 54%));
-  box-shadow: 0 8px 0 0 hsl(230, 65%, 38%);
-}
-
-.btn-rock {
-  background: linear-gradient(to bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
-  position: relative;
-  left: 90px;
-  top: 150px;
-  box-shadow: 0 8px 0 0 hsl(349, 68%, 38%);
-}
-.btn-rock:hover {
-  background: linear-gradient(to bottom, hsl(349, 66%, 45%), hsl(349, 55%, 47%));
-  box-shadow: 0 8px 0 0 hsl(349, 68%, 31%);
-}
-
-.btn-scissors {
-  background: linear-gradient(to bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
-  position: relative;
-  left: 50px;
-  top: -30px;
-  box-shadow: 0 8px 0 0 hsl(40, 83%, 38%);
-}
-.btn-scissors:hover {
-  background: linear-gradient(to bottom, hsl(39, 88%, 44%), hsl(40, 76%, 42%));
-  box-shadow: 0 8px 0 0 hsl(40, 84%, 33%);
-}
-
 .rules-btn {
   position: absolute;
   top: 90%;
