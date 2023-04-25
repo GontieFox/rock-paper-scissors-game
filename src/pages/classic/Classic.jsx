@@ -12,7 +12,6 @@ const Classic = () => {
     const popupOpened = useSelector((state) => state.popup.opened);
     const dispatch = useDispatch();
 
-
     const handlePopupOpened = () => {
         if (popupOpened) {
             dispatch(closePopup());
@@ -34,14 +33,27 @@ const Classic = () => {
                 </div>
             </div>
 
-            <div className="game">
+            <section className="step-one step-one_active">
+                <div className="game">
+                    <PaperButton top="-30px" left="130px" />
+                    <RockButton top="150px" left="90px" />
+                    <ScissorsButton top="-30px" left="50px" />
+                    <img src={triangle} alt="triangle" className="game__triangle" />
+                </div>
+            </section>
 
-                <PaperButton />
-                <RockButton />
-                <ScissorsButton />
+            <section className="step-two">
                 
-                <img src={triangle} alt="triangle" className="game__triangle" />
-            </div>
+            </section>
+
+            <section className="step-three">
+
+            </section>
+
+            <section className="step-four">
+
+            </section>
+
             <button className="rules-btn" id="rules-btn" onClick={handlePopupOpened}>Rules</button>
         </>
     );

@@ -10,11 +10,6 @@
     z-index: 2;
     box-shadow: 0 8px 0 0 $rockShadow;
 
-    &_position {
-        left: 90px;
-        top: 150px;
-    }
-
     &:hover {
         cursor: pointer;
         background: $rockHover;

@@ -8,10 +8,6 @@
   z-index: 2;
   box-shadow: 0 8px 0 0 hsl(230, 65%, 45%);
 }
-.btn-paper_position {
-  left: 130px;
-  top: -30px;
-}
 .btn-paper:hover {
   cursor: pointer;
   background: linear-gradient(to bottom, hsl(230, 66%, 55%), hsl(230, 56%, 54%));

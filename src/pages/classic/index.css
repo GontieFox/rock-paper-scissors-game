@@ -62,6 +62,34 @@
   cursor: pointer;
 }
 
+.step-one {
+  display: none;
+}
+.step-one_active {
+  display: flex;
+}
+
+.step-two {
+  display: none;
+}
+.step-two_active {
+  display: flex;
+}
+
+.step-three {
+  display: none;
+}
+.step-three_active {
+  display: flex;
+}
+
+.step-four {
+  display: none;
+}
+.step-four_active {
+  display: flex;
+}
+
 @media (max-height: 768px) {
   .game {
     margin-bottom: 80px;

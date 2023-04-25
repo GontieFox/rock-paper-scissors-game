@@ -68,6 +68,39 @@
     }
 }
 
+.step-one {
+    display: none;
+
+    &_active {
+        display: flex;
+    }
+}
+
+.step-two {
+    display: none;
+
+    &_active {
+        display: flex;
+    }
+}
+
+.step-three {
+    display: none;
+
+    &_active {
+        display: flex;
+    }
+}
+
+.step-four {
+    display: none;
+
+    &_active {
+        display: flex;
+    }
+}
+
+
 @media (max-height: 768px) {
     .game {
         margin-bottom: 80px;
