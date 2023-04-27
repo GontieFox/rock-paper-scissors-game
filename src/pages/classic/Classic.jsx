@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
 import { openPopup, closePopup } from "../../redux/reducers/popupSlice";
 import "./index.css";
 import logo from "./../../assets/images/logo.svg";
@@ -9,8 +10,24 @@ import RockButton from "../../components/rockButton/RockButton";
 import ScissorsButton from "../../components/scissorsButton/ScissorsButton";
 
 const Classic = () => {
+    const [userChoice, setUserChoice] = useState(null);
+    const [computerChoice, setComputerChoice] = useState(null);
+
     const popupOpened = useSelector((state) => state.popup.opened);
     const dispatch = useDispatch();
+
+    const handleUserChoice = (choice) => {
+        setUserChoice(choice);
+
+        const choices = ["rock", "paper", "scissors"];
+        const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+        setComputerChoice(computerChoice);
+    };
+
+    const resetChoices = () => {
+        setUserChoice(null);
+        setComputerChoice(null);
+    }
 
     const handlePopupOpened = () => {
         if (popupOpened) {
@@ -33,26 +50,30 @@ const Classic = () => {
                 </div>
             </div>
 
-            <section className="step-one step-one_active">
-                <div className="game">
-                    <PaperButton top="-30px" left="130px" />
-                    <RockButton top="150px" left="90px" />
-                    <ScissorsButton top="-30px" left="50px" />
-                    <img src={triangle} alt="triangle" className="game__triangle" />
-                </div>
-            </section>
-
-            <section className="step-two">
-                
-            </section>
-
-            <section className="step-three">
-
-            </section>
-
-            <section className="step-four">
-
-            </section>
+            <div className="game">
+                {userChoice === null ? (
+                    <>
+                        <PaperButton onClick={() => handleUserChoice("paper")} top="-30px" left="130px" />
+                        <RockButton onClick={() => handleUserChoice("rock")} top="150px" left="90px" />
+                        <ScissorsButton onClick={() => handleUserChoice("scissors")} top="-30px" left="50px" />
+                        <img src={triangle} alt="triangle" className="game__triangle" />
+                    </>
+                ) : (
+                    <>
+                        <div className="user-choice">
+                            {userChoice === "rock" && <RockButton />}
+                            {userChoice === "paper" && <PaperButton />}
+                            {userChoice === "scissors" && <ScissorsButton />}
+                        </div>
+                        <div className="computer-choice">
+                            {computerChoice === "rock" && <RockButton />}
+                            {computerChoice === "paper" && <PaperButton />}
+                            {computerChoice === "scissors" && <ScissorsButton />}
+                        </div>
+                        <button onClick={resetChoices}>Play again</button>
+                    </>
+                )}
+            </div>
 
             <button className="rules-btn" id="rules-btn" onClick={handlePopupOpened}>Rules</button>
         </>
