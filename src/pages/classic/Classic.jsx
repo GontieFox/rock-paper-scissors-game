@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { openPopup, closePopup } from "../../redux/reducers/popupSlice";
 import "./index.css";
 import logo from "./../../assets/images/logo.svg";
@@ -12,17 +12,36 @@ import ScissorsButton from "../../components/scissorsButton/ScissorsButton";
 const Classic = () => {
     const [userChoice, setUserChoice] = useState(null);
     const [computerChoice, setComputerChoice] = useState(null);
-
+    const [resultText, setResultText] = useState("");
     const [resultClass, setResultClass] = useState("");
-   
+
     const popupOpened = useSelector((state) => state.popup.opened);
     const dispatch = useDispatch();
+
+    useEffect(() => {
+        const result = document.querySelector('#result');
+    
+        if (userChoice === "rock" && computerChoice === "scissors" ||
+            userChoice === "paper" && computerChoice === "rock" ||
+            userChoice === "scissors" && computerChoice === "paper") {
+          setResultText("You win");
+        } else if (userChoice === computerChoice) {
+          setResultText("Draw");
+        } else {
+          setResultText("You lose");
+        }
+    
+        if (result) {
+          result.innerText = resultText;
+        }
+      }, [computerChoice, resultText, userChoice]);
 
     const handleUserChoice = (choice) => {
         setUserChoice(choice);
 
         const choices = ["rock", "paper", "scissors"];
         const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
         setTimeout(() => {
             setComputerChoice(computerChoice);
             setResultClass("result-block_active");
@@ -52,7 +71,7 @@ const Classic = () => {
                 <img src={logo} alt="logo" className="rules-logo" />
                 <div className="score">
                     <p className="score__subtitle">score</p>
-                    <h1 className="score__count">12</h1>
+                    <h1 className="score__count" id="score">0</h1>
                 </div>
             </div>
 
@@ -73,7 +92,7 @@ const Classic = () => {
                             {userChoice === "scissors" && <ScissorsButton />}
                         </div>
                         <div className={`result-block ${resultClass}`}>
-                            <h2 className="result-block__title">You lose</h2>
+                            <h2 className="result-block__title" id="result"></h2>
                             <button className="result-block__button" onClick={resetChoices}>Play again</button>
                         </div>
                         <div className="computer-choice">
