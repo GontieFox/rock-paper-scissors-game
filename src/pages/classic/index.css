@@ -62,34 +62,76 @@
   cursor: pointer;
 }
 
-.step-one {
-  display: none;
-}
-.step-one_active {
+.result {
   display: flex;
+  justify-content: center;
+}
+.result__text {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 90%);
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-.step-two {
+.result-block {
+  width: 0;
+  text-align: center;
+  margin-top: 70px;
   display: none;
+  transition: all 0.2s ease-in;
 }
-.step-two_active {
-  display: flex;
+.result-block_active {
+  display: block;
+  width: 200px;
+}
+.result-block__title {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  font-size: 38px;
+}
+.result-block__button {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(229, 25%, 31%);
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.result-block__button:hover {
+  color: hsl(0, 75%, 57%);
 }
 
-.step-three {
-  display: none;
-}
-.step-three_active {
-  display: flex;
+.user-choice {
+  margin-right: 50px;
 }
 
-.step-four {
-  display: none;
-}
-.step-four_active {
-  display: flex;
+.computer-choice {
+  margin-left: 50px;
 }
 
+.circle {
+  width: 145px;
+  height: 145px;
+  border-radius: 100px;
+  background-color: hsl(237, 56%, 15%);
+}
+
+@media (max-width: 768px) {
+  .result {
+    width: 90%;
+  }
+  .border {
+    width: 80%;
+  }
+}
 @media (max-height: 768px) {
   .game {
     margin-bottom: 80px;

@@ -13,6 +13,8 @@ const Classic = () => {
     const [userChoice, setUserChoice] = useState(null);
     const [computerChoice, setComputerChoice] = useState(null);
 
+    const [resultClass, setResultClass] = useState("");
+   
     const popupOpened = useSelector((state) => state.popup.opened);
     const dispatch = useDispatch();
 
@@ -21,12 +23,16 @@ const Classic = () => {
 
         const choices = ["rock", "paper", "scissors"];
         const computerChoice = choices[Math.floor(Math.random() * choices.length)];
-        setComputerChoice(computerChoice);
+        setTimeout(() => {
+            setComputerChoice(computerChoice);
+            setResultClass("result-block_active");
+        }, 3000)
     };
 
     const resetChoices = () => {
         setUserChoice(null);
         setComputerChoice(null);
+        setResultClass("");
     }
 
     const handlePopupOpened = () => {
@@ -52,26 +58,33 @@ const Classic = () => {
 
             <div className="game">
                 {userChoice === null ? (
-                    <>
+                    <div className="choice">
                         <PaperButton onClick={() => handleUserChoice("paper")} top="-30px" left="130px" />
                         <RockButton onClick={() => handleUserChoice("rock")} top="150px" left="90px" />
                         <ScissorsButton onClick={() => handleUserChoice("scissors")} top="-30px" left="50px" />
                         <img src={triangle} alt="triangle" className="game__triangle" />
-                    </>
+                    </div>
                 ) : (
-                    <>
+                    <div className="result">
                         <div className="user-choice">
+                            <p className="result__text">You picked</p>
                             {userChoice === "rock" && <RockButton />}
                             {userChoice === "paper" && <PaperButton />}
                             {userChoice === "scissors" && <ScissorsButton />}
                         </div>
-                        <div className="computer-choice">
-                            {computerChoice === "rock" && <RockButton />}
-                            {computerChoice === "paper" && <PaperButton />}
-                            {computerChoice === "scissors" && <ScissorsButton />}
+                        <div className={`result-block ${resultClass}`}>
+                            <h2 className="result-block__title">You lose</h2>
+                            <button className="result-block__button" onClick={resetChoices}>Play again</button>
                         </div>
-                        <button onClick={resetChoices}>Play again</button>
-                    </>
+                        <div className="computer-choice">
+                            <p className="result__text">The house picked</p>
+                            <div className="circle">
+                                {computerChoice === "rock" && <RockButton />}
+                                {computerChoice === "paper" && <PaperButton />}
+                                {computerChoice === "scissors" && <ScissorsButton />}
+                            </div>
+                        </div>
+                    </div>
                 )}
             </div>
 
