@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
-import { useState, useEffect } from "react";
-import { openPopup, closePopup } from "../../redux/reducers/popupSlice";
+import { useState } from "react";
+import { openPopup, closePopup } from "../../redux/reducers/popupSlice"
+import { increment as countIncrement, decrement as countDecrement } from "../../redux/reducers/countSlice";
 import "./index.css";
 import logo from "./../../assets/images/logo.svg";
 import triangle from "./../../assets/images/bg-triangle.svg";
@@ -9,42 +10,52 @@ import PaperButton from "../../components/paperButton/PaperButton";
 import RockButton from "../../components/rockButton/RockButton";
 import ScissorsButton from "../../components/scissorsButton/ScissorsButton";
 
+
 const Classic = () => {
     const [userChoice, setUserChoice] = useState(null);
     const [computerChoice, setComputerChoice] = useState(null);
     const [resultText, setResultText] = useState("");
     const [resultClass, setResultClass] = useState("");
 
+    const count = useSelector((state) => state.count.count);
+
     const popupOpened = useSelector((state) => state.popup.opened);
     const dispatch = useDispatch();
-
-    useEffect(() => {
-        const result = document.querySelector('#result');
-    
-        if (userChoice === "rock" && computerChoice === "scissors" ||
-            userChoice === "paper" && computerChoice === "rock" ||
-            userChoice === "scissors" && computerChoice === "paper") {
-          setResultText("You win");
-        } else if (userChoice === computerChoice) {
-          setResultText("Draw");
-        } else {
-          setResultText("You lose");
-        }
-    
-        if (result) {
-          result.innerText = resultText;
-        }
-      }, [computerChoice, resultText, userChoice]);
 
     const handleUserChoice = (choice) => {
         setUserChoice(choice);
 
         const choices = ["rock", "paper", "scissors"];
-        const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+        function randomInteger(min, max) {
+            let rand = min + Math.random() * (max + 1 - min);
+            return Math.floor(rand);
+        }
+
+        const computerChoice = choices[randomInteger(0, choices.length)];
 
         setTimeout(() => {
             setComputerChoice(computerChoice);
             setResultClass("result-block_active");
+
+            function test(choice, computerChoice) {
+                switch (true) {
+                    case choice === "rock" && computerChoice === "scissors" ||
+                        choice === "paper" && computerChoice === "rock" ||
+                        choice === "scissors" && computerChoice === "paper":
+                        dispatch(countIncrement());
+                        return "You win";
+                    case choice === computerChoice:
+                        return "Draw";
+                    default:
+                        dispatch(countDecrement());
+                        return "You lose";
+                }
+            }
+
+            let resultText = test(choice, computerChoice);
+            setResultText(resultText);
+
         }, 3000)
     };
 
@@ -71,7 +82,7 @@ const Classic = () => {
                 <img src={logo} alt="logo" className="rules-logo" />
                 <div className="score">
                     <p className="score__subtitle">score</p>
-                    <h1 className="score__count" id="score">0</h1>
+                    <h1 className="score__count" id="score">{count}</h1>
                 </div>
             </div>
 
@@ -92,7 +103,7 @@ const Classic = () => {
                             {userChoice === "scissors" && <ScissorsButton />}
                         </div>
                         <div className={`result-block ${resultClass}`}>
-                            <h2 className="result-block__title" id="result"></h2>
+                            <h2 className="result-block__title">{resultText}</h2>
                             <button className="result-block__button" onClick={resetChoices}>Play again</button>
                         </div>
                         <div className="computer-choice">
