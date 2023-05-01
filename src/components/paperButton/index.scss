@@ -10,10 +10,13 @@
     z-index: 2;
     box-shadow: 0 8px 0 0 $paperShadow;
 
-    &:hover {
+    &_hover {
         cursor: pointer;
-        background: $paperHover;
-        box-shadow: 0 8px 0 0 $paperShadowHover;
+
+        &:hover {
+            background: $paperHover;
+            box-shadow: 0 8px 0 0 $paperShadowHover;
+        }
     }
 
     &__background {

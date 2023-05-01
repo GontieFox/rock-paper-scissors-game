@@ -89,9 +89,9 @@ const Classic = () => {
             <div className="game">
                 {userChoice === null ? (
                     <div className="choice">
-                        <PaperButton onClick={() => handleUserChoice("paper")} top="-30px" left="130px" />
-                        <RockButton onClick={() => handleUserChoice("rock")} top="150px" left="90px" />
-                        <ScissorsButton onClick={() => handleUserChoice("scissors")} top="-30px" left="50px" />
+                        <PaperButton onClick={() => handleUserChoice("paper")} top="-30px" left="130px" isHover={true} />
+                        <RockButton onClick={() => handleUserChoice("rock")} top="150px" left="90px" isHover={true} />
+                        <ScissorsButton onClick={() => handleUserChoice("scissors")} top="-30px" left="50px" isHover={true} />
                         <img src={triangle} alt="triangle" className="game__triangle" />
                     </div>
                 ) : (

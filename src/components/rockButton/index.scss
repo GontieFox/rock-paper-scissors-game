@@ -10,10 +10,13 @@
     z-index: 2;
     box-shadow: 0 8px 0 0 $rockShadow;
 
-    &:hover {
+    &_hover {
         cursor: pointer;
-        background: $rockHover;
-        box-shadow: 0 8px 0 0 $rockShadowHover;
+
+        &:hover {
+            background: $rockHover;
+            box-shadow: 0 8px 0 0 $rockShadowHover;
+        }
     }
 
     &__background {

@@ -10,10 +10,13 @@
     z-index: 2;
     box-shadow: 0 8px 0 0 $scissorsShadow;
 
-    &:hover {
+    &_hover {
         cursor: pointer;
-        background: $scissorsHover;
-        box-shadow: 0 8px 0 0 $scissorsShadowHover;
+
+        &:hover {
+            background: $scissorsHover;
+            box-shadow: 0 8px 0 0 $scissorsShadowHover;
+        }
     }
 
     &__background {
