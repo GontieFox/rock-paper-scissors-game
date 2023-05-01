@@ -26,13 +26,7 @@ const Classic = () => {
         setUserChoice(choice);
 
         const choices = ["rock", "paper", "scissors"];
-
-        function randomInteger(min, max) {
-            let rand = min + Math.random() * (max + 1 - min);
-            return Math.floor(rand);
-        }
-
-        const computerChoice = choices[randomInteger(0, choices.length)];
+        const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
         setTimeout(() => {
             setComputerChoice(computerChoice);
