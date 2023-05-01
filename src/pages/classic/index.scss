@@ -28,9 +28,22 @@
     }
 
     &__count {
+        transition: all 0.2s ease-in;
         color: $darkText;
         font-size: 58px;
     }
+}
+
+.count_win {
+    transition: all 0.2s ease-in;
+    color: $lightGreen;
+    font-size: 58px;
+}
+
+.count_lose {
+    transition: all 0.2s ease-in;
+    color: $lightRed;
+    font-size: 58px;
 }
 
 .game {
@@ -121,11 +134,11 @@
 }
 
 .user-choice {
-   margin-right: 50px;
+    margin-right: 50px;
 }
 
 .computer-choice {
-   margin-left: 50px; 
+    margin-left: 50px;
 }
 
 .circle {

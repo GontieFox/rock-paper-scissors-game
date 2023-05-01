@@ -16,6 +16,7 @@ const Classic = () => {
     const [computerChoice, setComputerChoice] = useState(null);
     const [resultText, setResultText] = useState("");
     const [resultClass, setResultClass] = useState("");
+    const [scoreColor, setScoreColor] = useState("");
 
     const count = useSelector((state) => state.count.count);
 
@@ -32,22 +33,24 @@ const Classic = () => {
             setComputerChoice(computerChoice);
             setResultClass("result-block_active");
 
-            function test(choice, computerChoice) {
+            function gameResult(choice, computerChoice) {
                 switch (true) {
                     case choice === "rock" && computerChoice === "scissors" ||
                         choice === "paper" && computerChoice === "rock" ||
                         choice === "scissors" && computerChoice === "paper":
                         dispatch(countIncrement());
+                        setScoreColor("count_win");
                         return "You win";
                     case choice === computerChoice:
                         return "Draw";
                     default:
                         dispatch(countDecrement());
+                        setScoreColor("count_lose")
                         return "You lose";
                 }
             }
 
-            let resultText = test(choice, computerChoice);
+            let resultText = gameResult(choice, computerChoice);
             setResultText(resultText);
 
         }, 3000)
@@ -57,6 +60,7 @@ const Classic = () => {
         setUserChoice(null);
         setComputerChoice(null);
         setResultClass("");
+        setScoreColor("");
     }
 
     const handlePopupOpened = () => {
@@ -76,7 +80,7 @@ const Classic = () => {
                 <img src={logo} alt="logo" className="rules-logo" />
                 <div className="score">
                     <p className="score__subtitle">score</p>
-                    <h1 className="score__count" id="score">{count}</h1>
+                    <h1 className={`score__count ${scoreColor}`} id="score">{count}</h1>
                 </div>
             </div>
 
@@ -92,9 +96,11 @@ const Classic = () => {
                     <div className="result">
                         <div className="user-choice">
                             <p className="result__text">You picked</p>
+                            <div className="circle">
                             {userChoice === "rock" && <RockButton />}
                             {userChoice === "paper" && <PaperButton />}
                             {userChoice === "scissors" && <ScissorsButton />}
+                            </div>
                         </div>
                         <div className={`result-block ${resultClass}`}>
                             <h2 className="result-block__title">{resultText}</h2>

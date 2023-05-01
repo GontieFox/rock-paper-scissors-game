@@ -25,7 +25,20 @@
   letter-spacing: 0.1rem;
 }
 .score__count {
+  transition: all 0.2s ease-in;
   color: hsl(229, 25%, 31%);
+  font-size: 58px;
+}
+
+.count_win {
+  transition: all 0.2s ease-in;
+  color: hsl(118, 61%, 46%);
+  font-size: 58px;
+}
+
+.count_lose {
+  transition: all 0.2s ease-in;
+  color: hsl(0, 77%, 57%);
   font-size: 58px;
 }
 
