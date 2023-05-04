@@ -11,10 +11,13 @@ const countSlice = createSlice({
         },
         decrement: (state) => {
             state.count--;
+        },
+        resetCount: (state) => {
+            state.count = 0;
         }
     }
 });
 
-export const { increment, decrement } = countSlice.actions;
+export const { increment, decrement, resetCount } = countSlice.actions;
 
 export default countSlice.reducer;

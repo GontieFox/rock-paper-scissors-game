@@ -56,10 +56,7 @@
   transform: translate(-50%, -50%);
 }
 
-.rules-btn {
-  position: absolute;
-  top: 90%;
-  right: 100px;
+.btn {
   width: 150px;
   height: 40px;
   background: transparent;
@@ -70,7 +67,17 @@
   letter-spacing: 0.05rem;
   border-radius: 10px;
 }
-.rules-btn:hover {
+.btn__return {
+  position: absolute;
+  top: 90%;
+  right: 280px;
+}
+.btn__rules {
+  position: absolute;
+  top: 90%;
+  right: 100px;
+}
+.btn:hover {
   opacity: 0.8;
   cursor: pointer;
 }
