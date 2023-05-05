@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Classic from "./pages/classic/Classic";
 import Bonus from "./pages/bonus/Bonus";
@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router basename="/rock-paper-scissors-game">
+    <Router basename="/">
       <div className="App">
         <div className="background">
           <Routes>
