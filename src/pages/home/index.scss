@@ -3,6 +3,7 @@
 .title {
     color: $text;
     font-size: 56px;
+    text-align: center;
 }
 
 .buttons {
@@ -43,5 +44,24 @@
         &:hover {
             opacity: 0.85;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 46px;
+        width: 90%;
+    }
+
+    .buttons {
+        width: 90%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .button:first-child {
+        margin-bottom: 30px;
     }
 }
