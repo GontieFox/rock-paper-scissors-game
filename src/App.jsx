@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/rock-paper-scissors-game">
       <div className="App">
         <div className="background">
           <Routes>
