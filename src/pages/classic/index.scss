@@ -2,7 +2,7 @@
 
 .border {
   width: 600px;
-  height: 10 0px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -165,7 +165,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.15);
   }
   100% {
     transform: scale(1);
@@ -173,12 +173,88 @@
 }
 
 @media (max-width: 768px) {
-  .result {
+  .game {
     width: 90%;
+  }
+  
+  .result {
+    width: 100%;
+    justify-content: space-between;
+
+    &__text {
+      width: 150px;
+    }
+  }
+
+  .result-block {
+
+    &_active {
+      position: absolute;
+      top: 180px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  .user-choice {
+    margin-right: 0;
+  }
+
+  .computer-choice {
+    margin-left: 0;
   }
 
   .border {
     width: 80%;
+    height: 80px;
+    margin-bottom: 80px;
+  }
+
+  .score {
+    width: 110px;
+    height: 80px;
+    border-radius: 10px;
+
+    &__subtitle {
+      margin-top: 5px;
+    }
+
+    &__count {
+      font-size: 42px;
+    }
+  }
+
+  .rules-logo {
+    height: 80px;
+  }
+
+  .game {
+    width: 320px;
+
+    &__triangle {
+      width: 260px;
+    }
+  }
+
+  .circle {
+    width: 125px;
+    height: 120px;
+    margin: auto;
+   }
+
+  .btn {
+
+    &__return {
+      top: 85%;
+      right: 50%;
+      transform: translate(50%, 0);
+    }
+
+    &__rules {
+      top: 92%;
+      right: 50%;
+      transform: translate(50%);
+    }
   }
 }
 

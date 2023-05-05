@@ -1,14 +1,12 @@
 @import "./../../assets/colors/index.scss";
 
-.btn-paper {
+.paper-result {
     width: 145px;
     height: 140px;
-    top: -30px;
-    left: 130px;
     border-radius: 100px;
     border: none;
-    background: $paperGradient;
     position: relative;
+    background: $paperGradient;
     z-index: 2;
     box-shadow: 0 8px 0 0 $paperShadow;
 
@@ -39,11 +37,9 @@
 }
 
 @media (max-width: 768px) {
-    .btn-paper {
+    .paper-result {
         width: 125px;
         height: 120px;
-        left: 5px;
-        top: -20px;
 
         &__background {
             width: 80px;

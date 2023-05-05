@@ -3,6 +3,8 @@
 .btn-rock {
     width: 145px;
     height: 140px;
+    top: 150px;
+    left: 90px;
     border-radius: 100px;
     border: none;
     background: $rockGradient;
@@ -33,5 +35,19 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-rock {
+        width: 125px;
+        height: 120px;
+        top: 160px;
+        left: -30px;
+
+        &__background {
+            width: 80px;
+            height: 80px;
+        }
     }
 }

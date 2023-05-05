@@ -1,6 +1,8 @@
 .btn-scissors {
   width: 145px;
   height: 140px;
+  top: -30px;
+  left: 50px;
   border-radius: 100px;
   border: none;
   background: linear-gradient(to bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
@@ -28,4 +30,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .btn-scissors {
+    width: 125px;
+    height: 120px;
+    top: -140px;
+    left: 190px;
+  }
+  .btn-scissors__background {
+    width: 80px;
+    height: 80px;
+  }
 }/*# sourceMappingURL=index.css.map */

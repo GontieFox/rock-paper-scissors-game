@@ -4,7 +4,7 @@ import { openPopup, closePopup } from "../../redux/reducers/popupSlice";
 import {
   increment as countIncrement,
   decrement as countDecrement,
-  resetCount
+  resetCount,
 } from "../../redux/reducers/countSlice";
 import { Link } from "react-router-dom";
 import "./index.css";
@@ -12,9 +12,11 @@ import logo from "./../../assets/images/logo.svg";
 import triangle from "./../../assets/images/bg-triangle.svg";
 import PopupClassic from "../../components/popupClassic/PopupClassic";
 import PaperButton from "../../components/paperButton/PaperButton";
+import PaperButtonResult from "../../components/paperButtonResult/PaperButtonResult";
 import RockButton from "../../components/rockButton/RockButton";
+import RockButtonResult from "../../components/rockButtonResult/RockButtonResult";
 import ScissorsButton from "../../components/scissorsButton/ScissorsButton";
-
+import ScissorsButtonResult from "../../components/scissorsButtonResult/ScissorsButtonResult";
 
 const Classic = () => {
   const [userChoice, setUserChoice] = useState(null);
@@ -77,7 +79,7 @@ const Classic = () => {
 
   const handleReturnHome = () => {
     dispatch(resetCount());
-  }
+  };
 
   return (
     <>
@@ -98,20 +100,14 @@ const Classic = () => {
           <div className="choice">
             <PaperButton
               onClick={() => handleUserChoice("paper")}
-              top="-30px"
-              left="130px"
               isHover={true}
             />
             <RockButton
               onClick={() => handleUserChoice("rock")}
-              top="150px"
-              left="90px"
               isHover={true}
             />
             <ScissorsButton
               onClick={() => handleUserChoice("scissors")}
-              top="-30px"
-              left="50px"
               isHover={true}
             />
             <img src={triangle} alt="triangle" className="game__triangle" />
@@ -121,9 +117,9 @@ const Classic = () => {
             <div className="user-choice">
               <p className="result__text">You picked</p>
               <div className="circle">
-                {userChoice === "rock" && <RockButton />}
-                {userChoice === "paper" && <PaperButton />}
-                {userChoice === "scissors" && <ScissorsButton />}
+                {userChoice === "rock" && <RockButtonResult />}
+                {userChoice === "paper" && <PaperButtonResult />}
+                {userChoice === "scissors" && <ScissorsButtonResult />}
               </div>
             </div>
             <div className={`result-block ${resultClass}`}>
@@ -135,9 +131,9 @@ const Classic = () => {
             <div className="computer-choice">
               <p className="result__text">The house picked</p>
               <div className="circle">
-                {computerChoice === "rock" && <RockButton />}
-                {computerChoice === "paper" && <PaperButton />}
-                {computerChoice === "scissors" && <ScissorsButton />}
+                {computerChoice === "rock" && <RockButtonResult />}
+                {computerChoice === "paper" && <PaperButtonResult />}
+                {computerChoice === "scissors" && <ScissorsButtonResult />}
               </div>
             </div>
           </div>
@@ -145,7 +141,11 @@ const Classic = () => {
       </div>
 
       <Link to="/">
-        <button className="btn btn__return" id="return-btn" onClick={handleReturnHome}>
+        <button
+          className="btn btn__return"
+          id="return-btn"
+          onClick={handleReturnHome}
+        >
           Return back
         </button>
       </Link>
