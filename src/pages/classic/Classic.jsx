@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import "./index.css";
 import logo from "./../../assets/images/logo.svg";
 import triangle from "./../../assets/images/bg-triangle.svg";
-import PopupClassic from "../../components/popupClassic/PopupClassic";
+import PopupRules from "../../components/popupRules/PopupRules";
 import PaperButton from "../../components/paperButton/PaperButton";
 import PaperButtonResult from "../../components/paperButtonResult/PaperButtonResult";
 import RockButton from "../../components/rockButton/RockButton";
@@ -83,7 +83,7 @@ const Classic = () => {
 
   return (
     <>
-      <PopupClassic isOpen={popupOpened} onClose={handlePopupOpened} />
+      <PopupRules isOpen={popupOpened} onClose={handlePopupOpened} rulesMode={true} />
 
       <div className="border">
         <img src={logo} alt="logo" className="rules-logo" />
