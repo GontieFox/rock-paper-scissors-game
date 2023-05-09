@@ -255,6 +255,7 @@
 @media (max-height: 768px) {
   .border {
     margin-bottom: 35px;
+    margin-top: 10px;
   }
 
   .game {
@@ -290,7 +291,7 @@
 
   .result-block {
     &_active {
-      top: 120px;
+      top: 100px;
     }
 
     &__title {

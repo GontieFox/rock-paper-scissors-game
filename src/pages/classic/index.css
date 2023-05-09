@@ -222,6 +222,7 @@
 @media (max-height: 768px) {
   .border {
     margin-bottom: 35px;
+    margin-top: 10px;
   }
   .game {
     margin-bottom: 80px;
@@ -248,7 +249,7 @@
     margin: auto;
   }
   .result-block_active {
-    top: 120px;
+    top: 100px;
   }
   .result-block__title {
     font-size: 30px;
