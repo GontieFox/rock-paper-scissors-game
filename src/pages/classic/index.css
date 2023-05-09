@@ -273,4 +273,9 @@
   .game {
     margin-bottom: 0;
   }
+}
+@media (max-height: 768px) and (max-width: 768px) {
+  .user-choice {
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
