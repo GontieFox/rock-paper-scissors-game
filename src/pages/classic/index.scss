@@ -173,10 +173,6 @@
 }
 
 @media (max-width: 768px) {
-  .game {
-    width: 90%;
-  }
-  
   .result {
     width: 100%;
     justify-content: space-between;
@@ -187,7 +183,6 @@
   }
 
   .result-block {
-
     &_active {
       position: absolute;
       top: 180px;
@@ -240,10 +235,9 @@
     width: 125px;
     height: 120px;
     margin: auto;
-   }
+  }
 
   .btn {
-
     &__return {
       top: 85%;
       right: 50%;
@@ -259,8 +253,69 @@
 }
 
 @media (max-height: 768px) {
+  .border {
+    margin-bottom: 35px;
+  }
+
   .game {
     margin-bottom: 80px;
+
+    &__triangle {
+      height: 200px;
+    }
+  }
+
+  .circle {
+    width: 110px;
+    height: 110px;
+    margin: auto;
+  }
+
+  .result {
+    margin: auto;
+
+    &__text {
+      margin-bottom: 30px;
+    }
+  }
+
+  .user-choice {
+    margin-right: 80px;
+  }
+
+  .choice {
+    width: 320px;
+    margin: auto;
+  }
+
+  .result-block {
+    &_active {
+      top: 120px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__button {
+      margin-top: 10px;
+      font-size: 14px;
+      padding: 10px 40px;
+    }
+  }
+
+  .btn {
+    &__return {
+      top: 83%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    &__rules {
+      top: 91%;
+      left: 50%;
+      transform: translate(-50%);
+    }
   }
 }
 

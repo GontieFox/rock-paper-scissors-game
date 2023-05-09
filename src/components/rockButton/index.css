@@ -50,4 +50,23 @@
     width: 80px;
     height: 80px;
   }
+}
+@media (max-height: 768px) {
+  .btn-rock {
+    width: 110px;
+    height: 110px;
+  }
+  .btn-rock__classic {
+    position: relative;
+    top: 150px;
+    left: -5px;
+  }
+  .btn-rock__background {
+    width: 70px;
+    height: 70px;
+  }
+  .btn-rock__image {
+    width: 40px;
+    height: 40px;
+  }
 }/*# sourceMappingURL=index.css.map */

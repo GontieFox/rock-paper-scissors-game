@@ -39,4 +39,18 @@
     width: 80px;
     height: 80px;
   }
+}
+@media (max-height: 768px) {
+  .paper-result {
+    width: 110px;
+    height: 110px;
+  }
+  .paper-result__background {
+    width: 70px;
+    height: 70px;
+  }
+  .paper-result__image {
+    width: 40px;
+    height: 40px;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -39,4 +39,18 @@
     width: 80px;
     height: 80px;
   }
+}
+@media (max-height: 768px) {
+  .scissors-result {
+    width: 110px;
+    height: 110px;
+  }
+  .scissors-result__background {
+    width: 70px;
+    height: 70px;
+  }
+  .scissors-result__image {
+    width: 40px;
+    height: 40px;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -50,4 +50,23 @@
     width: 80px;
     height: 80px;
   }
+}
+@media (max-height: 768px) {
+  .btn-paper {
+    width: 110px;
+    height: 110px;
+  }
+  .btn-paper__classic {
+    position: relative;
+    top: 0px;
+    left: 10px;
+  }
+  .btn-paper__background {
+    width: 70px;
+    height: 70px;
+  }
+  .btn-paper__image {
+    width: 40px;
+    height: 40px;
+  }
 }/*# sourceMappingURL=index.css.map */
