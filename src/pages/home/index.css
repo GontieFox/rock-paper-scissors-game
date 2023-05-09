@@ -2,6 +2,7 @@
   color: hsl(0, 0%, 90%);
   font-size: 56px;
   text-align: center;
+  margin-top: 200px;
 }
 
 .buttons {
@@ -44,6 +45,7 @@
   .title {
     font-size: 46px;
     width: 90%;
+    margin-top: 80px;
   }
   .buttons {
     width: 90%;
