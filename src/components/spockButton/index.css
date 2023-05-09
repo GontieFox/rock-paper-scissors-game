@@ -1,30 +1,27 @@
-.btn-paper {
+.btn-spock {
   width: 145px;
   height: 140px;
-  border-radius: 100px;
-  border: none;
-  background: linear-gradient(to bottom, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
-  z-index: 2;
-  box-shadow: 0 8px 0 0 hsl(230, 65%, 45%);
-}
-.btn-paper__classic {
-  position: relative;
   top: -30px;
   left: 130px;
+  border-radius: 100px;
+  border: none;
+  background: linear-gradient(to bottom, hsl(189, 65%, 54%), hsl(189, 54%, 45%));
+  z-index: 2;
+  box-shadow: 0 8px 0 0 hsl(189, 52%, 39%);
 }
-.btn-paper__bonus {
+.btn-spock__bonus {
   position: relative;
-  top: 50px;
-  left: 390px;
+  top: -90px;
+  left: 70px;
 }
-.btn-paper_hover {
+.btn-spock_hover {
   cursor: pointer;
 }
-.btn-paper_hover:hover {
-  background: linear-gradient(to bottom, hsl(230, 66%, 55%), hsl(230, 56%, 54%));
-  box-shadow: 0 8px 0 0 hsl(230, 65%, 38%);
+.btn-spock_hover:hover {
+  background: linear-gradient(to bottom, hsl(189, 58%, 40%), hsl(189, 43%, 41%));
+  box-shadow: 0 8px 0 0 hsl(189, 54%, 32%);
 }
-.btn-paper__background {
+.btn-spock__background {
   width: 100px;
   height: 100px;
   background-color: hsl(0, 0%, 100%);
@@ -32,7 +29,7 @@
   margin: auto;
   box-shadow: 0 -4px 0 2px hsl(0, 0%, 85%);
 }
-.btn-paper__image {
+.btn-spock__image {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -40,13 +37,13 @@
 }
 
 @media (max-width: 768px) {
-  .btn-paper {
+  .btn-spock {
     width: 125px;
     height: 120px;
     left: 5px;
     top: -20px;
   }
-  .btn-paper__background {
+  .btn-spock__background {
     width: 80px;
     height: 80px;
   }

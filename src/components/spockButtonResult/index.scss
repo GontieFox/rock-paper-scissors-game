@@ -1,0 +1,49 @@
+@import "./../../assets/colors/index.scss";
+
+.spock-result {
+    width: 145px;
+    height: 140px;
+    border-radius: 100px;
+    border: none;
+    background: $spockGradient;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 8px 0 0 $spockShadow;
+
+    &_hover {
+        cursor: pointer;
+
+        &:hover {
+            background: $spockHover;
+            box-shadow: 0 8px 0 0 $spockShadowHover;
+        }
+    }
+
+    &__background {
+        width: 100px;
+        height: 100px;
+        background-color: $white;
+        border-radius: 100px;
+        margin: auto;
+        box-shadow: 0 -4px 0 2px $backgroundShadow;
+    }
+
+    &__image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .scissors-result {
+        width: 125px;
+        height: 120px;
+
+        &__background {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}

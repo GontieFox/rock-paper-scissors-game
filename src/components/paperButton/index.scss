@@ -1,53 +1,62 @@
 @import "./../../assets/colors/index.scss";
 
 .btn-paper {
-    width: 145px;
-    height: 140px;
+  width: 145px;
+  height: 140px;
+  border-radius: 100px;
+  border: none;
+  background: $paperGradient;
+  z-index: 2;
+  box-shadow: 0 8px 0 0 $paperShadow;
+
+  &__classic {
+    position: relative;
     top: -30px;
     left: 130px;
-    border-radius: 100px;
-    border: none;
-    background: $paperGradient;
+  }
+
+  &__bonus {
     position: relative;
-    z-index: 2;
-    box-shadow: 0 8px 0 0 $paperShadow;
+    top: 50px;
+    left: 390px;
+  }
 
-    &_hover {
-        cursor: pointer;
+  &_hover {
+    cursor: pointer;
 
-        &:hover {
-            background: $paperHover;
-            box-shadow: 0 8px 0 0 $paperShadowHover;
-        }
+    &:hover {
+      background: $paperHover;
+      box-shadow: 0 8px 0 0 $paperShadowHover;
     }
+  }
 
-    &__background {
-        width: 100px;
-        height: 100px;
-        background-color: $white;
-        border-radius: 100px;
-        margin: auto;
-        box-shadow: 0 -4px 0 2px $backgroundShadow;
-    }
+  &__background {
+    width: 100px;
+    height: 100px;
+    background-color: $white;
+    border-radius: 100px;
+    margin: auto;
+    box-shadow: 0 -4px 0 2px $backgroundShadow;
+  }
 
-    &__image {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media (max-width: 768px) {
-    .btn-paper {
-        width: 125px;
-        height: 120px;
-        left: 5px;
-        top: -20px;
+  .btn-paper {
+    width: 125px;
+    height: 120px;
+    left: 5px;
+    top: -20px;
 
-        &__background {
-            width: 80px;
-            height: 80px;
-        }
+    &__background {
+      width: 80px;
+      height: 80px;
     }
+  }
 }

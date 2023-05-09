@@ -1,53 +1,62 @@
 @import "./../../assets/colors/index.scss";
 
 .btn-scissors {
-    width: 145px;
-    height: 140px;
+  width: 145px;
+  height: 140px;
+  border-radius: 100px;
+  border: none;
+  background: $scissorsGradient;
+  z-index: 2;
+  box-shadow: 0 8px 0 0 $scissorsShadow;
+
+  &__classic {
+    position: relative;
     top: -30px;
     left: 50px;
-    border-radius: 100px;
-    border: none;
-    background: $scissorsGradient;
+  }
+
+  &__bonus {
     position: relative;
-    z-index: 2;
-    box-shadow: 0 8px 0 0 $scissorsShadow;
+    top: -70px;
+    left: -60px;
+  }
 
-    &_hover {
-        cursor: pointer;
+  &_hover {
+    cursor: pointer;
 
-        &:hover {
-            background: $scissorsHover;
-            box-shadow: 0 8px 0 0 $scissorsShadowHover;
-        }
+    &:hover {
+      background: $scissorsHover;
+      box-shadow: 0 8px 0 0 $scissorsShadowHover;
     }
+  }
 
-    &__background {
-        width: 100px;
-        height: 100px;
-        background-color: $white;
-        border-radius: 100px;
-        margin: auto;
-        box-shadow: 0 -4px 0 2px $backgroundShadow;
-    }
+  &__background {
+    width: 100px;
+    height: 100px;
+    background-color: $white;
+    border-radius: 100px;
+    margin: auto;
+    box-shadow: 0 -4px 0 2px $backgroundShadow;
+  }
 
-    &__image {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media (max-width: 768px) {
-    .btn-scissors {
-        width: 125px;
-        height: 120px;
-        top: -140px;
-        left: 190px;
+  .btn-scissors {
+    width: 125px;
+    height: 120px;
+    top: -140px;
+    left: 190px;
 
-        &__background {
-            width: 80px;
-            height: 80px;
-        }
+    &__background {
+      width: 80px;
+      height: 80px;
     }
+  }
 }

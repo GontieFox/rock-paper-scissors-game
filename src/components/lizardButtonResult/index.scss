@@ -1,0 +1,49 @@
+@import "./../../assets/colors/index.scss";
+
+.lizard-result {
+    width: 145px;
+    height: 140px;
+    border-radius: 100px;
+    border: none;
+    position: relative;
+    background: $lizardGradient;
+    z-index: 2;
+    box-shadow: 0 8px 0 0 $lizardShadow;
+
+    &_hover {
+        cursor: pointer;
+
+        &:hover {
+            background: $lizardHover;
+            box-shadow: 0 8px 0 0 $lizardShadowHover;
+        }
+    }
+
+    &__background {
+        width: 100px;
+        height: 100px;
+        background-color: $white;
+        border-radius: 100px;
+        margin: auto;
+        box-shadow: 0 -4px 0 2px $backgroundShadow;
+    }
+
+    &__image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .lizard-result {
+        width: 125px;
+        height: 120px;
+
+        &__background {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}

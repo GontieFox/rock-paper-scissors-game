@@ -8,7 +8,7 @@ import {
 } from "../../redux/reducers/countSlice";
 import { Link } from "react-router-dom";
 import "./index.css";
-import logo from "./../../assets/images/logo.svg";
+import logoClassic from "./../../assets/images/logo.svg";
 import triangle from "./../../assets/images/bg-triangle.svg";
 import PopupRules from "../../components/popupRules/PopupRules";
 import PaperButton from "../../components/paperButton/PaperButton";
@@ -83,10 +83,14 @@ const Classic = () => {
 
   return (
     <>
-      <PopupRules isOpen={popupOpened} onClose={handlePopupOpened} rulesMode={true} />
+      <PopupRules
+        isOpen={popupOpened}
+        onClose={handlePopupOpened}
+        rulesMode={true}
+      />
 
       <div className="border">
-        <img src={logo} alt="logo" className="rules-logo" />
+        <img src={logoClassic} alt="logo" className="rules-logo" />
         <div className="score">
           <p className="score__subtitle">score</p>
           <h1 className={`score__count ${scoreColor}`} id="score">
@@ -101,14 +105,17 @@ const Classic = () => {
             <PaperButton
               onClick={() => handleUserChoice("paper")}
               isHover={true}
+              position={true}
             />
             <RockButton
               onClick={() => handleUserChoice("rock")}
               isHover={true}
+              position={true}
             />
             <ScissorsButton
               onClick={() => handleUserChoice("scissors")}
               isHover={true}
+              position={true}
             />
             <img src={triangle} alt="triangle" className="game__triangle" />
           </div>

@@ -3,13 +3,15 @@ $scissorsGradient: linear-gradient(to bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53
 $paperGradient: linear-gradient(to bottom, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
 $rockGradient: linear-gradient(to bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
 $lizardGradient: linear-gradient(to bottom, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
-$cyan: linear-gradient(to botom, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+$spockGradient: linear-gradient(to bottom, hsl(189, 65%, 54%), hsl(189, 54%, 45%));
 
 // Shadow
 $paperShadow: hsl(230, 65%, 45%);
 $rockShadow: hsl(349, 68%, 38%);
 $scissorsShadow: hsl(40, 83%, 38%);
 $backgroundShadow: hsl(0, 0%, 85%);
+$lizardShadow: hsl(261, 50%, 49%);
+$spockShadow: hsl(189, 52%, 39%);
 
 // Hover
 $scissorsHover: linear-gradient(to bottom, hsl(39, 88%, 44%), hsl(40, 76%, 42%));
@@ -18,6 +20,10 @@ $paperHover: linear-gradient(to bottom, hsl(230, 66%, 55%), hsl(230, 56%, 54%));
 $paperShadowHover: hsl(230, 65%, 38%);
 $rockHover: linear-gradient(to bottom, hsl(349, 66%, 45%), hsl(349, 55%, 47%));
 $rockShadowHover: hsl(349, 68%, 31%);
+$lizardHover: linear-gradient(to bottom, hsl(261, 52%, 52%), hsl(261, 48%, 51%));
+$lizardShadowHover: hsl(261, 53%, 40%);
+$spockHover: linear-gradient(to bottom, hsl(189, 58%, 40%), hsl(189, 43%, 41%));
+$spockShadowHover: hsl(189, 54%, 32%);
 
 // Text
 $darkText: hsl(229, 25%, 31%);

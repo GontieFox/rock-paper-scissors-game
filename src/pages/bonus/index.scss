@@ -1,0 +1,271 @@
+@import "./../../assets/colors/index.scss";
+
+.border {
+  width: 600px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: 4px solid $headerOutline;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.score {
+  width: 150px;
+  height: 100px;
+  background-color: $text;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__subtitle {
+    text-transform: uppercase;
+    color: $scoreText;
+    letter-spacing: 0.1rem;
+  }
+
+  &__count {
+    transition: all 0.2s ease-in;
+    color: $darkText;
+    font-size: 58px;
+  }
+}
+
+.count_win {
+  transition: all 0.2s ease-in;
+  color: $lightGreen;
+  font-size: 58px;
+}
+
+.count_lose {
+  transition: all 0.2s ease-in;
+  color: $lightRed;
+  font-size: 58px;
+}
+
+.game {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 150px;
+
+  &__pentagon {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid $headerOutline;
+  color: $text;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  border-radius: 10px;
+
+  &__return {
+    position: absolute;
+    top: 90%;
+    right: 280px;
+  }
+
+  &__rules {
+    position: absolute;
+    top: 90%;
+    right: 100px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+
+  &__text {
+    text-transform: uppercase;
+    color: $text;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
+.result-block {
+  width: 0;
+  text-align: center;
+  margin-top: 70px;
+  display: none;
+  transition: all 0.2s ease-in;
+
+  &_active {
+    display: block;
+    width: 200px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $white;
+    font-size: 38px;
+  }
+
+  &__button {
+    background-color: $white;
+    color: $darkText;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+.user-choice {
+  margin-right: 50px;
+}
+
+.computer-choice {
+  margin-left: 50px;
+}
+
+.circle {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background-color: $circle;
+  animation-name: circle-shrink;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes circle-shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .game {
+    width: 90%;
+  }
+  
+  .result {
+    width: 100%;
+    justify-content: space-between;
+
+    &__text {
+      width: 150px;
+    }
+  }
+
+  .result-block {
+
+    &_active {
+      position: absolute;
+      top: 180px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  .user-choice {
+    margin-right: 0;
+  }
+
+  .computer-choice {
+    margin-left: 0;
+  }
+
+  .border {
+    width: 80%;
+    height: 80px;
+    margin-bottom: 80px;
+  }
+
+  .score {
+    width: 110px;
+    height: 80px;
+    border-radius: 10px;
+
+    &__subtitle {
+      margin-top: 5px;
+    }
+
+    &__count {
+      font-size: 42px;
+    }
+  }
+
+  .rules-logo {
+    height: 80px;
+  }
+
+  .game {
+    width: 320px;
+
+    &__triangle {
+      width: 260px;
+    }
+  }
+
+  .circle {
+    width: 125px;
+    height: 120px;
+    margin: auto;
+   }
+
+  .btn {
+
+    &__return {
+      top: 85%;
+      right: 50%;
+      transform: translate(50%, 0);
+    }
+
+    &__rules {
+      top: 92%;
+      right: 50%;
+      transform: translate(50%);
+    }
+  }
+}
+
+@media (max-height: 768px) {
+  .game {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-heigth: 680px) {
+  .game {
+    margin-bottom: 0;
+  }
+}
