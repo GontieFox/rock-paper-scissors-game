@@ -46,7 +46,7 @@ const Bonus = () => {
 
       function gameResult(choice, computerChoice) {
         switch (true) {
-          case (choice === "sccissors" && computerChoice === "paper") ||
+          case (choice === "scissors" && computerChoice === "paper") ||
             (choice === "paper" && computerChoice === "rock") ||
             (choice === "rock" && computerChoice === "lizard") || 
             (choice === "lizard" && computerChoice === "spock") ||
