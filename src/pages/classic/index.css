@@ -7,7 +7,7 @@
   border: 4px solid hsl(217, 16%, 45%);
   border-radius: 20px;
   margin-bottom: 100px;
-  margin-top: 120px;
+  margin-top: 15%;
 }
 
 .score {
@@ -47,7 +47,7 @@
   position: relative;
   width: 600px;
   height: 300px;
-  margin-bottom: 150px;
+  margin-bottom: 10%;
 }
 .game__triangle {
   position: absolute;
@@ -223,10 +223,10 @@
 @media (max-height: 768px) {
   .border {
     margin-bottom: 35px;
-    margin-top: 20px;
+    margin-top: 5%;
   }
   .game {
-    margin-bottom: 80px;
+    margin-bottom: 10%;
   }
   .game__triangle {
     height: 200px;
