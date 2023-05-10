@@ -8,7 +8,6 @@ import {
 } from "../../redux/reducers/countSlice";
 import { Link } from "react-router-dom";
 import "./index.css";
-import logoBonus from "./../../assets/images/logo-bonus.svg";
 import pentagon from "./../../assets/images/bg-pentagon.svg";
 import PopupRules from "../../components/popupRules/PopupRules";
 import PaperButton from "../../components/paperButton/PaperButton";
@@ -21,6 +20,7 @@ import LizardButton from "../../components/lizardButton/LizardButton";
 import LizardButtonResult from "../../components/lizardButtonResult/LizardButtonResult";
 import SpockButton from "../../components/spockButton/SpockButton";
 import SpockButtonResult from "../../components/spockButtonResult/SpockButtonResult";
+import BorderLogo from "../../components/borderLogo/BorderLogo";
 
 const Bonus = () => {
   const [userChoice, setUserChoice] = useState(null);
@@ -101,15 +101,7 @@ const Bonus = () => {
           rulesMode={false}
         />
 
-        <div className="border">
-          <img src={logoBonus} alt="logo" className="rules-logo" />
-          <div className="score">
-            <p className="score__subtitle">score</p>
-            <h1 className={`score__count ${scoreColor}`} id="score">
-              {count}
-            </h1>
-          </div>
-        </div>
+        <BorderLogo logo={false} count={count} scoreColor={scoreColor} />
 
         <div className="game">
           {userChoice === null ? (
