@@ -4,7 +4,7 @@
     color: $text;
     font-size: 56px;
     text-align: center;
-    margin-top: 25%;
+    margin-top: 250px;
 }
 
 .buttons {
@@ -45,6 +45,11 @@
         &:hover {
             opacity: 0.85;
         }
+    }
+}
+@media (max-width: 1024px) {
+    .title {
+        margin-top: 25%;
     }
 }
 

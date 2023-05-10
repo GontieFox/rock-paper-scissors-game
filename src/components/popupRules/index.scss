@@ -49,3 +49,16 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .popup-rules {
+
+        &__container {
+            padding: 15px;
+        }
+
+        &__image {
+            width: 280px;
+        }
+    }
+}

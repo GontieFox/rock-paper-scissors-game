@@ -40,4 +40,13 @@
 .popup-rules__close-btn:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .popup-rules__container {
+    padding: 15px;
+  }
+  .popup-rules__image {
+    width: 280px;
+  }
 }/*# sourceMappingURL=index.css.map */
