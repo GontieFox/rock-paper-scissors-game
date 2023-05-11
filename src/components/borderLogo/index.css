@@ -42,6 +42,20 @@
     height: 80px;
     margin-bottom: 80px;
   }
+  .score {
+    width: 110px;
+    height: 80px;
+    border-radius: 10px;
+  }
+  .score__subtitle {
+    margin-top: 5px;
+  }
+  .score__count {
+    font-size: 42px;
+  }
+  .rules-logo {
+    height: 80px;
+  }
 }
 @media (max-height: 768px) {
   .border {

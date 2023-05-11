@@ -47,6 +47,24 @@
     height: 80px;
     margin-bottom: 80px;
   }
+
+  .score {
+    width: 110px;
+    height: 80px;
+    border-radius: 10px;
+
+    &__subtitle {
+      margin-top: 5px;
+    }
+
+    &__count {
+      font-size: 42px;
+    }
+  }
+
+  .rules-logo {
+    height: 80px;
+  }
 }
 
 @media (max-height: 768px) {

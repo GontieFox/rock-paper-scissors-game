@@ -127,115 +127,101 @@
   }
 }
 @media (max-width: 768px) {
-  .result {
+  .result-bonus {
     width: 100%;
     justify-content: space-between;
   }
-  .result__text {
+  .result-bonus__text {
     width: 150px;
   }
-  .result-block_active {
+  .result-bonus_active {
     position: absolute;
     top: 180px;
     left: 50%;
     transform: translate(-50%);
   }
-  .user-choice {
+  .user-bonus {
     margin-right: 0;
   }
-  .computer-choice {
+  .computer-bonus {
     margin-left: 0;
   }
-  .score {
-    width: 110px;
-    height: 80px;
-    border-radius: 10px;
-  }
-  .score__subtitle {
-    margin-top: 5px;
-  }
-  .score__count {
-    font-size: 42px;
-  }
-  .rules-logo {
-    height: 80px;
-  }
-  .game {
+  .game-bonus {
     width: 320px;
   }
-  .game__triangle {
+  .game-bonus__triangle {
     width: 260px;
   }
-  .circle {
+  .circle-bonus {
     width: 125px;
     height: 120px;
     margin: auto;
   }
-  .btn__return {
+  .btn-bonus__return {
     top: 85%;
     right: 50%;
     transform: translate(50%, 0);
   }
-  .btn__rules {
+  .btn-bonus__rules {
     top: 92%;
     right: 50%;
     transform: translate(50%);
   }
 }
 @media (max-height: 768px) {
-  .game {
+  .game-bonus {
     margin-bottom: 10%;
   }
-  .game__triangle {
+  .game-bonus__triangle {
     height: 200px;
   }
-  .circle {
+  .circle-bonus {
     width: 110px;
     height: 110px;
     margin: auto;
   }
-  .result {
+  .result-bonus {
     margin: auto;
   }
-  .result__text {
+  .result-bonus__text {
     margin-bottom: 30px;
   }
-  .user-choice {
+  .user-bonus {
     margin-right: 80px;
   }
-  .choice {
+  .choice-bonus {
     width: 320px;
     margin: auto;
   }
-  .result-block_active {
+  .block-bonus_active {
     top: 100px;
   }
-  .result-block__title {
+  .block-bonus__title {
     font-size: 30px;
   }
-  .result-block__button {
+  .block-bonus__button {
     margin-top: 10px;
     font-size: 14px;
     padding: 10px 40px;
   }
-  .btn__return {
+  .btn-bonus__return {
     top: 83%;
     left: 50%;
     transform: translate(-50%);
   }
-  .btn__rules {
+  .btn-bonus__rules {
     top: 91%;
     left: 50%;
     transform: translate(-50%);
   }
 }
 @media (max-heigth: 680px) {
-  .game {
+  .game-bonus {
     margin-bottom: 0;
   }
 }
 @media (max-height: 768px) and (max-width: 768px) {
-  .user-choice {
+  .user-bonus {
     margin-right: 0;
   }
 }/*# sourceMappingURL=index.css.map */

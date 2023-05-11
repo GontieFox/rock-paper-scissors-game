@@ -139,7 +139,7 @@
 }
 
 @media (max-width: 768px) {
-  .result {
+  .result-classic {
     width: 100%;
     justify-content: space-between;
 
@@ -148,7 +148,7 @@
     }
   }
 
-  .result-block {
+  .block-classic {
     &_active {
       position: absolute;
       top: 180px;
@@ -157,33 +157,15 @@
     }
   }
 
-  .user-choice {
+  .user-classic {
     margin-right: 0;
   }
 
-  .computer-choice {
+  .computer-classic {
     margin-left: 0;
   }
 
-  .score {
-    width: 110px;
-    height: 80px;
-    border-radius: 10px;
-
-    &__subtitle {
-      margin-top: 5px;
-    }
-
-    &__count {
-      font-size: 42px;
-    }
-  }
-
-  .rules-logo {
-    height: 80px;
-  }
-
-  .game {
+  .game-classic {
     width: 320px;
 
     &__triangle {
@@ -191,13 +173,13 @@
     }
   }
 
-  .circle {
+  .circle-classic {
     width: 125px;
     height: 120px;
     margin: auto;
   }
 
-  .btn {
+  .btn-classic {
     &__return {
       top: 85%;
       right: 50%;
@@ -213,7 +195,7 @@
 }
 
 @media (max-height: 768px) {
-  .game {
+  .game-classic {
     margin-bottom: 10%;
 
     &__triangle {
@@ -221,13 +203,13 @@
     }
   }
 
-  .circle {
+  .circle-classic {
     width: 110px;
     height: 110px;
     margin: auto;
   }
 
-  .result {
+  .result-classic {
     margin: auto;
 
     &__text {
@@ -235,16 +217,16 @@
     }
   }
 
-  .user-choice {
+  .user-classic {
     margin-right: 80px;
   }
 
-  .choice {
+  .choice-classic {
     width: 320px;
     margin: auto;
   }
 
-  .result-block {
+  .block-classic {
     &_active {
       top: 100px;
     }
@@ -260,7 +242,7 @@
     }
   }
 
-  .btn {
+  .btn-classic {
     &__return {
       top: 83%;
       left: 50%;
@@ -276,13 +258,13 @@
 }
 
 @media (max-heigth: 680px) {
-  .game {
+  .game-classic {
     margin-bottom: 0;
   }
 }
 
 @media (max-height: 768px) and (max-width: 768px) {
-  .user-choice {
+  .user-classic {
     margin-right: 0;
   }
 }
