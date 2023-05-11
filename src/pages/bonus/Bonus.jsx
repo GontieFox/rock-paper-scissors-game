@@ -42,7 +42,7 @@ const Bonus = () => {
 
     setTimeout(() => {
       setComputerChoice(computerChoice);
-      setResultClass("result-block_active");
+      setResultClass("block-bonus_active");
 
       function gameResult(choice, computerChoice) {
         switch (true) {
@@ -103,9 +103,9 @@ const Bonus = () => {
 
         <BorderLogo logo={false} count={count} scoreColor={scoreColor} />
 
-        <div className="game">
+        <div className="game-bonus">
           {userChoice === null ? (
-            <div className="choice">
+            <div className="choice-bonus">
               <PaperButton
                 onClick={() => handleUserChoice("paper")}
                 isHover={true}
@@ -131,13 +131,13 @@ const Bonus = () => {
                 isHover={true}
                 position={false}
               />
-              <img src={pentagon} alt="pentagon" className="game__pentagon" />
+              <img src={pentagon} alt="pentagon" className="game-bonus__pentagon" />
             </div>
           ) : (
-            <div className="result">
-              <div className="user-choice">
-                <p className="result__text">You picked</p>
-                <div className="circle">
+            <div className="result-bonus">
+              <div className="user-bonus">
+                <p className="result-bonus__text">You picked</p>
+                <div className="circle-bonus">
                   {userChoice === "rock" && <RockButtonResult />}
                   {userChoice === "paper" && <PaperButtonResult />}
                   {userChoice === "scissors" && <ScissorsButtonResult />}
@@ -145,15 +145,15 @@ const Bonus = () => {
                   {userChoice === "spock" && <SpockButtonResult />}
                 </div>
               </div>
-              <div className={`result-block ${resultClass}`}>
-                <h2 className="result-block__title">{resultText}</h2>
-                <button className="result-block__button" onClick={resetChoices}>
+              <div className={`block-bonus ${resultClass}`}>
+                <h2 className="block-bonus__title">{resultText}</h2>
+                <button className="block-bonus__button" onClick={resetChoices}>
                   Play again
                 </button>
               </div>
-              <div className="computer-choice">
-                <p className="result__text">The house picked</p>
-                <div className="circle">
+              <div className="computer-bonus">
+                <p className="result-bonus__text">The house picked</p>
+                <div className="circle-bonus">
                   {computerChoice === "rock" && <RockButtonResult />}
                   {computerChoice === "paper" && <PaperButtonResult />}
                   {computerChoice === "scissors" && <ScissorsButtonResult />}
@@ -167,7 +167,7 @@ const Bonus = () => {
 
         <Link to="/">
           <button
-            className="btn btn__return"
+            className="btn-bonus btn-bonus__return"
             id="return-btn"
             onClick={handleReturnHome}
           >
@@ -175,7 +175,7 @@ const Bonus = () => {
           </button>
         </Link>
         <button
-          className="btn btn__rules"
+          className="btn-bonus btn-bonus__rules"
           id="rules-btn"
           onClick={handlePopupOpened}
         >

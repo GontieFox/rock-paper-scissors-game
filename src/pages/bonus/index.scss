@@ -1,12 +1,288 @@
 @import "./../../assets/colors/index.scss";
 
-.game {
-  
+.count_win {
+  transition: all 0.2s ease-in;
+  color: $lightGreen;
+  font-size: 58px;
+}
+
+.count_lose {
+  transition: all 0.2s ease-in;
+  color: $lightRed;
+  font-size: 58px;
+}
+
+.game-bonus {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 10%;
+
   &__pentagon {
     position: absolute;
     z-index: 1;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+.btn-bonus {
+  width: 150px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid $headerOutline;
+  color: $text;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  border-radius: 10px;
+
+  &__return {
+    position: absolute;
+    top: 90%;
+    right: 280px;
+  }
+
+  &__rules {
+    position: absolute;
+    top: 90%;
+    right: 100px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.result-bonus {
+  display: flex;
+  justify-content: center;
+
+  &__text {
+    text-transform: uppercase;
+    color: $text;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
+.block-bonus {
+  width: 0;
+  text-align: center;
+  margin-top: 70px;
+  display: none;
+  transition: all 0.2s ease-in;
+
+  &_active {
+    display: block;
+    width: 200px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $white;
+    font-size: 38px;
+  }
+
+  &__button {
+    background-color: $white;
+    color: $darkText;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+.user-bonus {
+  margin-right: 50px;
+}
+
+.computer-bonus {
+  margin-left: 50px;
+}
+
+.circle-bonus {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background-color: $circle;
+  animation-name: circle-shrink;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes circle-shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .result {
+    width: 100%;
+    justify-content: space-between;
+
+    &__text {
+      width: 150px;
+    }
+  }
+
+  .result-block {
+    &_active {
+      position: absolute;
+      top: 180px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  .user-choice {
+    margin-right: 0;
+  }
+
+  .computer-choice {
+    margin-left: 0;
+  }
+
+  .score {
+    width: 110px;
+    height: 80px;
+    border-radius: 10px;
+
+    &__subtitle {
+      margin-top: 5px;
+    }
+
+    &__count {
+      font-size: 42px;
+    }
+  }
+
+  .rules-logo {
+    height: 80px;
+  }
+
+  .game {
+    width: 320px;
+
+    &__triangle {
+      width: 260px;
+    }
+  }
+
+  .circle {
+    width: 125px;
+    height: 120px;
+    margin: auto;
+  }
+
+  .btn {
+    &__return {
+      top: 85%;
+      right: 50%;
+      transform: translate(50%, 0);
+    }
+
+    &__rules {
+      top: 92%;
+      right: 50%;
+      transform: translate(50%);
+    }
+  }
+}
+
+@media (max-height: 768px) {
+  .game {
+    margin-bottom: 10%;
+
+    &__triangle {
+      height: 200px;
+    }
+  }
+
+  .circle {
+    width: 110px;
+    height: 110px;
+    margin: auto;
+  }
+
+  .result {
+    margin: auto;
+
+    &__text {
+      margin-bottom: 30px;
+    }
+  }
+
+  .user-choice {
+    margin-right: 80px;
+  }
+
+  .choice {
+    width: 320px;
+    margin: auto;
+  }
+
+  .result-block {
+    &_active {
+      top: 100px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__button {
+      margin-top: 10px;
+      font-size: 14px;
+      padding: 10px 40px;
+    }
+  }
+
+  .btn {
+    &__return {
+      top: 83%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    &__rules {
+      top: 91%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+}
+
+@media (max-heigth: 680px) {
+  .game {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-height: 768px) and (max-width: 768px) {
+  .user-choice {
+    margin-right: 0;
   }
 }

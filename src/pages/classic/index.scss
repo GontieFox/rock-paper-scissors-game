@@ -1,28 +1,5 @@
 @import "./../../assets/colors/index.scss";
 
-.score {
-  width: 150px;
-  height: 100px;
-  background-color: $text;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  &__subtitle {
-    text-transform: uppercase;
-    color: $scoreText;
-    letter-spacing: 0.1rem;
-  }
-
-  &__count {
-    transition: all 0.2s ease-in;
-    color: $darkText;
-    font-size: 58px;
-  }
-}
-
 .count_win {
   transition: all 0.2s ease-in;
   color: $lightGreen;
@@ -35,7 +12,7 @@
   font-size: 58px;
 }
 
-.game {
+.game-classic {
   position: relative;
   width: 600px;
   height: 300px;
@@ -50,7 +27,7 @@
   }
 }
 
-.btn {
+.btn-classic {
   width: 150px;
   height: 40px;
   background: transparent;
@@ -79,7 +56,7 @@
   }
 }
 
-.result {
+.result-classic {
   display: flex;
   justify-content: center;
 
@@ -93,7 +70,7 @@
   }
 }
 
-.result-block {
+.block-classic {
   width: 0;
   text-align: center;
   margin-top: 70px;
@@ -131,15 +108,15 @@
   }
 }
 
-.user-choice {
+.user-classic {
   margin-right: 50px;
 }
 
-.computer-choice {
+.computer-classic {
   margin-left: 50px;
 }
 
-.circle {
+.circle-classic {
   width: 145px;
   height: 145px;
   border-radius: 50%;

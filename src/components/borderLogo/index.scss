@@ -12,6 +12,29 @@
   margin-top: 150px;
 }
 
+.score {
+  width: 150px;
+  height: 100px;
+  background-color: $text;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__subtitle {
+    text-transform: uppercase;
+    color: $scoreText;
+    letter-spacing: 0.1rem;
+  }
+
+  &__count {
+    transition: all 0.2s ease-in;
+    color: $darkText;
+    font-size: 58px;
+  }
+}
+
 @media (max-width: 1024px) {
   .border {
     margin-top: 15%;

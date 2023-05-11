@@ -38,7 +38,7 @@ const Classic = () => {
 
     setTimeout(() => {
       setComputerChoice(computerChoice);
-      setResultClass("result-block_active");
+      setResultClass("block-classic_active");
 
       function gameResult(choice, computerChoice) {
         switch (true) {
@@ -91,9 +91,9 @@ const Classic = () => {
 
       <BorderLogo logo={true} count={count} scoreColor={scoreColor} />
 
-      <div className="game">
+      <div className="game-classic">
         {userChoice === null ? (
-          <div className="choice">
+          <div className="choice-classic">
             <PaperButton
               onClick={() => handleUserChoice("paper")}
               isHover={true}
@@ -109,27 +109,27 @@ const Classic = () => {
               isHover={true}
               position={true}
             />
-            <img src={triangle} alt="triangle" className="game__triangle" />
+            <img src={triangle} alt="triangle" className="game-classic__triangle" />
           </div>
         ) : (
-          <div className="result">
-            <div className="user-choice">
-              <p className="result__text">You picked</p>
-              <div className="circle">
+          <div className="result-classic">
+            <div className="user-classic">
+              <p className="result-classic__text">You picked</p>
+              <div className="circle-classic">
                 {userChoice === "rock" && <RockButtonResult />}
                 {userChoice === "paper" && <PaperButtonResult />}
                 {userChoice === "scissors" && <ScissorsButtonResult />}
               </div>
             </div>
-            <div className={`result-block ${resultClass}`}>
-              <h2 className="result-block__title">{resultText}</h2>
-              <button className="result-block__button" onClick={resetChoices}>
+            <div className={`block-classic ${resultClass}`}>
+              <h2 className="block-classic__title">{resultText}</h2>
+              <button className="block-classic__button" onClick={resetChoices}>
                 Play again
               </button>
             </div>
-            <div className="computer-choice">
-              <p className="result__text">The house picked</p>
-              <div className="circle">
+            <div className="computer-classic">
+              <p className="result-classic__text">The house picked</p>
+              <div className="circle-classic">
                 {computerChoice === "rock" && <RockButtonResult />}
                 {computerChoice === "paper" && <PaperButtonResult />}
                 {computerChoice === "scissors" && <ScissorsButtonResult />}
@@ -141,7 +141,7 @@ const Classic = () => {
 
       <Link to="/">
         <button
-          className="btn btn__return"
+          className="btn-classic btn-classic__return"
           id="return-btn"
           onClick={handleReturnHome}
         >
@@ -149,7 +149,7 @@ const Classic = () => {
         </button>
       </Link>
       <button
-        className="btn btn__rules"
+        className="btn-classic btn-classic__rules"
         id="rules-btn"
         onClick={handlePopupOpened}
       >
