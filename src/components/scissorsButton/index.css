@@ -7,12 +7,17 @@
   z-index: 2;
   box-shadow: 0 8px 0 0 hsl(40, 83%, 38%);
 }
-.btn-scissors__classic {
+.btn-scissors_result {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.btn-scissors_classic {
   position: relative;
   top: -30px;
   left: 50px;
 }
-.btn-scissors__bonus {
+.btn-scissors_bonus {
   position: relative;
   top: -70px;
   left: -60px;
@@ -56,7 +61,7 @@
     width: 110px;
     height: 110px;
   }
-  .btn-scissors__classic {
+  .btn-scissors_classic {
     position: relative;
     top: -110px;
     left: 210px;

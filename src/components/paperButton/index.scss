@@ -9,13 +9,19 @@
   z-index: 2;
   box-shadow: 0 8px 0 0 $paperShadow;
 
-  &__classic {
+  &_result {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  &_classic {
     position: relative;
     top: -30px;
     left: 130px;
   }
 
-  &__bonus {
+  &_bonus {
     position: relative;
     top: 50px;
     left: 390px;
@@ -51,8 +57,11 @@
   .btn-paper {
     width: 125px;
     height: 120px;
-    left: 5px;
-    top: -20px;
+
+    &_classic {
+      left: 5px;
+      top: -20px;
+    }
 
     &__background {
       width: 80px;
@@ -66,7 +75,7 @@
     width: 110px;
     height: 110px;
 
-    &__classic {
+    &_classic {
       position: relative;
       top: 0px;
       left: 10px;

@@ -6,11 +6,13 @@
   background: linear-gradient(to bottom, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
   z-index: 2;
   box-shadow: 0 8px 0 0 hsl(261, 50%, 49%);
-}
-.btn-lizard__bonus {
   position: relative;
   top: 250px;
   left: -320px;
+}
+.btn-lizard_result {
+  top: 0;
+  left: 0;
 }
 .btn-lizard_hover {
   cursor: pointer;

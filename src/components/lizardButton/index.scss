@@ -1,56 +1,61 @@
 @import "./../../assets/colors/index.scss";
 
 .btn-lizard {
-    width: 145px;
-    height: 140px;
+  width: 145px;
+  height: 140px;
+  border-radius: 100px;
+  border: none;
+  background: $lizardGradient;
+  z-index: 2;
+  box-shadow: 0 8px 0 0 $lizardShadow;
+  position: relative;
+  top: 250px;
+  left: -320px;
+
+  &_result {
+    top: 0;
+    left: 0;
+  }
+
+  &_bonus {
+  }
+
+  &_hover {
+    cursor: pointer;
+
+    &:hover {
+      background: $lizardHover;
+      box-shadow: 0 8px 0 0 $lizardShadowHover;
+    }
+  }
+
+  &__background {
+    width: 100px;
+    height: 100px;
+    background-color: $white;
     border-radius: 100px;
-    border: none;
-    background: $lizardGradient;
-    z-index: 2;
-    box-shadow: 0 8px 0 0 $lizardShadow;
+    margin: auto;
+    box-shadow: 0 -4px 0 2px $backgroundShadow;
+  }
 
-    &__bonus {
-        position: relative;
-        top: 250px;
-        left: -320px;
-    }
-
-    &_hover {
-        cursor: pointer;
-
-        &:hover {
-            background: $lizardHover;
-            box-shadow: 0 8px 0 0 $lizardShadowHover;
-        }
-    }
-
-    &__background {
-        width: 100px;
-        height: 100px;
-        background-color: $white;
-        border-radius: 100px;
-        margin: auto;
-        box-shadow: 0 -4px 0 2px $backgroundShadow;
-    }
-
-    &__image {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media (max-width: 768px) {
-    .btn-lizard {
-        width: 125px;
-        height: 120px;
-        left: 5px;
-        top: -20px;
+  .btn-lizard {
+    width: 125px;
+    height: 120px;
+    left: 5px;
+    top: -20px;
 
-        &__background {
-            width: 80px;
-            height: 80px;
-        }
+    &__background {
+      width: 80px;
+      height: 80px;
     }
+  }
 }

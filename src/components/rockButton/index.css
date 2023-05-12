@@ -7,12 +7,17 @@
   z-index: 2;
   box-shadow: 0 8px 0 0 hsl(349, 68%, 38%);
 }
-.btn-rock__classic {
+.btn-rock_result {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.btn-rock_classic {
   position: relative;
   top: 150px;
   left: 90px;
 }
-.btn-rock__bonus {
+.btn-rock_bonus {
   position: relative;
   top: 250px;
   left: 190px;
@@ -56,12 +61,12 @@
     width: 110px;
     height: 110px;
   }
-  .btn-rock__classic {
+  .btn-rock_classic {
     position: relative;
     top: 150px;
     left: -5px;
   }
-  .btn-rock__background {
+  .btn-rock_background {
     width: 70px;
     height: 70px;
   }

@@ -11,11 +11,8 @@ import "./index.css";
 import triangle from "./../../assets/images/bg-triangle.svg";
 import PopupRules from "../../components/popupRules/PopupRules";
 import PaperButton from "../../components/paperButton/PaperButton";
-import PaperButtonResult from "../../components/paperButtonResult/PaperButtonResult";
 import RockButton from "../../components/rockButton/RockButton";
-import RockButtonResult from "../../components/rockButtonResult/RockButtonResult";
 import ScissorsButton from "../../components/scissorsButton/ScissorsButton";
-import ScissorsButtonResult from "../../components/scissorsButtonResult/ScissorsButtonResult";
 import BorderLogo from "../../components/borderLogo/BorderLogo";
 
 const Classic = () => {
@@ -96,18 +93,21 @@ const Classic = () => {
           <div className="choice-classic">
             <PaperButton
               onClick={() => handleUserChoice("paper")}
+              isClick={true}
               isHover={true}
-              position={true}
+              isClassic={true}
             />
             <RockButton
               onClick={() => handleUserChoice("rock")}
+              isClick={true}
               isHover={true}
-              position={true}
+              isClassic={true}
             />
             <ScissorsButton
               onClick={() => handleUserChoice("scissors")}
+              isClick={true}
               isHover={true}
-              position={true}
+              isClassic={true}
             />
             <img src={triangle} alt="triangle" className="game-classic__triangle" />
           </div>
@@ -116,9 +116,9 @@ const Classic = () => {
             <div className="user-classic">
               <p className="result-classic__text">You picked</p>
               <div className="circle-classic">
-                {userChoice === "rock" && <RockButtonResult />}
-                {userChoice === "paper" && <PaperButtonResult />}
-                {userChoice === "scissors" && <ScissorsButtonResult />}
+                {userChoice === "rock" && <RockButton isResult={true} />}
+                {userChoice === "paper" && <PaperButton isResult={true} />}
+                {userChoice === "scissors" && <ScissorsButton isResult={true}/>}
               </div>
             </div>
             <div className={`block-classic ${resultClass}`}>
@@ -130,9 +130,9 @@ const Classic = () => {
             <div className="computer-classic">
               <p className="result-classic__text">The house picked</p>
               <div className="circle-classic">
-                {computerChoice === "rock" && <RockButtonResult />}
-                {computerChoice === "paper" && <PaperButtonResult />}
-                {computerChoice === "scissors" && <ScissorsButtonResult />}
+                {computerChoice === "rock" && <RockButton isResult={true}/>}
+                {computerChoice === "paper" && <PaperButton isResult={true} />}
+                {computerChoice === "scissors" && <ScissorsButton isResult={true} />}
               </div>
             </div>
           </div>

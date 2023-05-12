@@ -7,12 +7,17 @@
   z-index: 2;
   box-shadow: 0 8px 0 0 hsl(230, 65%, 45%);
 }
-.btn-paper__classic {
+.btn-paper_result {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.btn-paper_classic {
   position: relative;
   top: -30px;
   left: 130px;
 }
-.btn-paper__bonus {
+.btn-paper_bonus {
   position: relative;
   top: 50px;
   left: 390px;
@@ -43,6 +48,8 @@
   .btn-paper {
     width: 125px;
     height: 120px;
+  }
+  .btn-paper_classic {
     left: 5px;
     top: -20px;
   }
@@ -56,7 +63,7 @@
     width: 110px;
     height: 110px;
   }
-  .btn-paper__classic {
+  .btn-paper_classic {
     position: relative;
     top: 0px;
     left: 10px;

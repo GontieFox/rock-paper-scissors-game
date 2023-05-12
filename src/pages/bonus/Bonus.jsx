@@ -11,15 +11,10 @@ import "./index.css";
 import pentagon from "./../../assets/images/bg-pentagon.svg";
 import PopupRules from "../../components/popupRules/PopupRules";
 import PaperButton from "../../components/paperButton/PaperButton";
-import PaperButtonResult from "../../components/paperButtonResult/PaperButtonResult";
 import RockButton from "../../components/rockButton/RockButton";
-import RockButtonResult from "../../components/rockButtonResult/RockButtonResult";
 import ScissorsButton from "../../components/scissorsButton/ScissorsButton";
-import ScissorsButtonResult from "../../components/scissorsButtonResult/ScissorsButtonResult";
 import LizardButton from "../../components/lizardButton/LizardButton";
-import LizardButtonResult from "../../components/lizardButtonResult/LizardButtonResult";
 import SpockButton from "../../components/spockButton/SpockButton";
-import SpockButtonResult from "../../components/spockButtonResult/SpockButtonResult";
 import BorderLogo from "../../components/borderLogo/BorderLogo";
 
 const Bonus = () => {
@@ -108,28 +103,31 @@ const Bonus = () => {
             <div className="choice-bonus">
               <PaperButton
                 onClick={() => handleUserChoice("paper")}
+                isClick={true}
                 isHover={true}
-                position={false}
+                isBonus={true}
               />
               <RockButton
                 onClick={() => handleUserChoice("rock")}
+                isClick={true}
                 isHover={true}
-                position={false}
+                isBonus={true}
               />
               <ScissorsButton
                 onClick={() => handleUserChoice("scissors")}
+                isClick={true}
                 isHover={true}
-                position={false}
+                isBonus={true}
               />
               <LizardButton
                 onClick={() => handleUserChoice("lizard")}
+                isClick={true}
                 isHover={true}
-                position={false}
               />
               <SpockButton
                 onClick={() => handleUserChoice("spock")}
+                isClick={true}
                 isHover={true}
-                position={false}
               />
               <img src={pentagon} alt="pentagon" className="game-bonus__pentagon" />
             </div>
@@ -138,11 +136,11 @@ const Bonus = () => {
               <div className="user-bonus">
                 <p className="result-bonus__text">You picked</p>
                 <div className="circle-bonus">
-                  {userChoice === "rock" && <RockButtonResult />}
-                  {userChoice === "paper" && <PaperButtonResult />}
-                  {userChoice === "scissors" && <ScissorsButtonResult />}
-                  {userChoice === "lizard" && <LizardButtonResult />}
-                  {userChoice === "spock" && <SpockButtonResult />}
+                  {userChoice === "rock" && <RockButton isResult={true}/>}
+                  {userChoice === "paper" && <PaperButton isResult={true} />}
+                  {userChoice === "scissors" && <ScissorsButton isResult={true}/>}
+                  {userChoice === "lizard" && <LizardButton isResult={true} />}
+                  {userChoice === "spock" && <SpockButton isResult={true} />}
                 </div>
               </div>
               <div className={`block-bonus ${resultClass}`}>
@@ -154,11 +152,11 @@ const Bonus = () => {
               <div className="computer-bonus">
                 <p className="result-bonus__text">The house picked</p>
                 <div className="circle-bonus">
-                  {computerChoice === "rock" && <RockButtonResult />}
-                  {computerChoice === "paper" && <PaperButtonResult />}
-                  {computerChoice === "scissors" && <ScissorsButtonResult />}
-                  {computerChoice === "lizard" && <LizardButtonResult />}
-                  {computerChoice === "spock" && <SpockButtonResult />}
+                  {computerChoice === "rock" && <RockButton isResult={true}/>}
+                  {computerChoice === "paper" && <PaperButton isResult={true} />}
+                  {computerChoice === "scissors" && <ScissorsButton isResult={true} />}
+                  {computerChoice === "lizard" && <LizardButton isResult={true} />}
+                  {computerChoice === "spock" && <SpockButton isResult={true} />}
                 </div>
               </div>
             </div>

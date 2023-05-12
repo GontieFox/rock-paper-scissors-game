@@ -8,11 +8,13 @@
   background: linear-gradient(to bottom, hsl(189, 65%, 54%), hsl(189, 54%, 45%));
   z-index: 2;
   box-shadow: 0 8px 0 0 hsl(189, 52%, 39%);
-}
-.btn-spock__bonus {
   position: relative;
   top: -90px;
   left: 70px;
+}
+.btn-spock_result {
+  top: 0;
+  left: 0;
 }
 .btn-spock_hover {
   cursor: pointer;

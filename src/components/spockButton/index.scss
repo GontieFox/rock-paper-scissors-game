@@ -10,11 +10,13 @@
     background: $spockGradient;
     z-index: 2;
     box-shadow: 0 8px 0 0 $spockShadow;
+    position: relative;
+    top: -90px;
+    left: 70px;
 
-    &__bonus {
-        position: relative;
-        top: -90px;
-        left: 70px;
+    &_result {
+        top: 0;
+        left: 0;
     }
 
     &_hover {
