@@ -170,7 +170,7 @@
 }
 @media (max-height: 768px) {
   .game-bonus {
-    margin-bottom: 10%;
+    margin-bottom: 25%;
   }
   .game-bonus__triangle {
     height: 200px;
