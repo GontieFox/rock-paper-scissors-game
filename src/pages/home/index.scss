@@ -1,20 +1,20 @@
 @import "./../../assets/colors/index.scss";
 
-.title {
+.home {
+  text-align: center;
+
+  &__title {
     color: $text;
     font-size: 56px;
-    text-align: center;
-    margin-top: 250px;
-}
+  }
 
-.buttons {
+  &__buttons {
     margin-top: 200px;
-    width: 450px;
     display: flex;
     justify-content: space-between;
-}
+  }
 
-.button {
+  &__button {
     width: 180px;
     height: 60px;
     text-transform: uppercase;
@@ -24,51 +24,51 @@
     border-radius: 10px;
 
     &:hover {
-        cursor: pointer;
+      cursor: pointer;
     }
 
     &_classic {
-        background: $scissorsGradient;
-        color: $text;
-        transition: all 0.2s ease-in;
+      background: $scissorsGradient;
+      color: $text;
+      transition: all 0.2s ease-in;
 
-        &:hover {
-            opacity: 0.85;
-        }
+      &:hover {
+        opacity: 0.85;
+      }
     }
 
     &_bonus {
-        background: $rockGradient;
-        color: $text;
-        transition: all 0.2s ease-in;
+      background: $rockGradient;
+      color: $text;
+      transition: all 0.2s ease-in;
 
-        &:hover {
-            opacity: 0.85;
-        }
+      &:hover {
+        opacity: 0.85;
+      }
     }
+  }
 }
+
 @media (max-width: 1024px) {
-    .title {
-        margin-top: 25%;
-    }
 }
 
 @media (max-width: 768px) {
-    .title {
-        font-size: 46px;
-        width: 90%;
-        margin-top: 20%;
+  .home {
+    &__title {
+      font-size: 46px;
     }
 
-    .buttons {
-        width: 90%;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        flex-direction: column;
-        text-align: center;
+    &__buttons {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      flex-direction: column;
+      text-align: center;
     }
 
-    .button:first-child {
+    &__button {
+      &:first-child {
         margin-bottom: 30px;
+      }
     }
+  }
 }

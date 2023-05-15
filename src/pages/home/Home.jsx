@@ -3,17 +3,17 @@ import "./index.css";
 
 const Home = () => {
     return (
-        <>
-            <h1 className="title">Rock, Paper, Scissors</h1>
-            <div className="buttons">
+        <div className="home">
+            <h1 className="home__title">Rock, Paper, Scissors</h1>
+            <div className="home__buttons">
                 <Link to="/classic">
-                    <button className="button button_classic">Classic</button>
+                    <button className="home__button home__button_classic">Classic</button>
                 </Link>
                 <Link to="/bonus">
-                    <button className="button button_bonus">Bonus</button>
+                    <button className="home__button home__button_bonus">Bonus</button>
                 </Link>
             </div>
-        </>
+        </div>
     );
 }
 
