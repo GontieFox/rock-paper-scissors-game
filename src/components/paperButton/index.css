@@ -53,6 +53,10 @@
     left: 5px;
     top: -20px;
   }
+  .btn-paper_bonus {
+    top: 75px;
+    left: 240px;
+  }
   .btn-paper__background {
     width: 80px;
     height: 80px;
@@ -67,6 +71,28 @@
     position: relative;
     top: 0px;
     left: 10px;
+  }
+  .btn-paper__background {
+    width: 70px;
+    height: 70px;
+  }
+  .btn-paper__image {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 580px) {
+  .btn-paper {
+    width: 100px;
+    height: 100px;
+  }
+  .btn-paper_classic {
+    top: 30px;
+    left: 30px;
+  }
+  .btn-paper_bonus {
+    top: 70px;
+    left: 230px;
   }
   .btn-paper__background {
     width: 70px;

@@ -1,60 +1,90 @@
 @import "./../../assets/colors/index.scss";
 
 .btn-spock {
-    width: 145px;
-    height: 140px;
-    top: -30px;
-    left: 130px;
-    border-radius: 100px;
-    border: none;
-    background: $spockGradient;
-    z-index: 2;
-    box-shadow: 0 8px 0 0 $spockShadow;
-    position: relative;
+  width: 145px;
+  height: 140px;
+  top: -30px;
+  left: 130px;
+  border-radius: 100px;
+  border: none;
+  background: $spockGradient;
+  z-index: 2;
+  box-shadow: 0 8px 0 0 $spockShadow;
+  position: relative;
+  
+
+  &_bonus {
     top: -90px;
-    left: 70px;
+  left: 70px;
+  }
 
-    &_result {
-        top: 0;
-        left: 0;
+  &_result {
+    top: 0;
+    left: 0;
+  }
+
+  &_hover {
+    cursor: pointer;
+
+    &:hover {
+      background: $spockHover;
+      box-shadow: 0 8px 0 0 $spockShadowHover;
     }
+  }
 
-    &_hover {
-        cursor: pointer;
+  &__background {
+    width: 100px;
+    height: 100px;
+    background-color: $white;
+    border-radius: 100px;
+    margin: auto;
+    box-shadow: 0 -4px 0 2px $backgroundShadow;
+  }
 
-        &:hover {
-            background: $spockHover;
-            box-shadow: 0 8px 0 0 $spockShadowHover;
-        }
-    }
-
-    &__background {
-        width: 100px;
-        height: 100px;
-        background-color: $white;
-        border-radius: 100px;
-        margin: auto;
-        box-shadow: 0 -4px 0 2px $backgroundShadow;
-    }
-
-    &__image {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media (max-width: 768px) {
-    .btn-spock {
-        width: 125px;
-        height: 120px;
-        left: 5px;
-        top: -20px;
+  .btn-spock {
+    width: 125px;
+    height: 120px;
 
-        &__background {
-            width: 80px;
-            height: 80px;
-        }
+    &_bonus {
+      left: -50px;
+      top: -170px;
     }
+
+    &__background {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+
+@media (max-width: 580px) {
+  .btn-spock {
+    width: 100px;
+    height: 100px;
+
+    &_bonus {
+      top: -30px;
+      left: -110px;
+    }
+
+    &__background {
+      width: 70px;
+      height: 70px;
+    }
+
+    &__image {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }

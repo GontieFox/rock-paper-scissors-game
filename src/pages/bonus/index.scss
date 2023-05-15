@@ -40,13 +40,13 @@
 
   &__return {
     position: absolute;
-    top: 90%;
+    top: 93%;
     right: 280px;
   }
 
   &__rules {
     position: absolute;
-    top: 90%;
+    top: 93%;
     right: 100px;
   }
 
@@ -148,10 +148,10 @@
     }
   }
 
-  .result-bonus {
+  .block-bonus {
     &_active {
       position: absolute;
-      top: 180px;
+      top: 45%;
       left: 50%;
       transform: translate(-50%);
     }
@@ -168,7 +168,7 @@
   .game-bonus {
     width: 320px;
 
-    &__triangle {
+    &__pentagon {
       width: 260px;
     }
   }
@@ -266,5 +266,12 @@
 @media (max-height: 768px) and (max-width: 768px) {
   .user-bonus {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .circle-bonus {
+    width: 100px;
+    height: 100px;
   }
 }

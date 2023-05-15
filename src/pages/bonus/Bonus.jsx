@@ -123,11 +123,13 @@ const Bonus = () => {
                 onClick={() => handleUserChoice("lizard")}
                 isClick={true}
                 isHover={true}
+                isBonus={true}
               />
               <SpockButton
                 onClick={() => handleUserChoice("spock")}
                 isClick={true}
                 isHover={true}
+                isBonus={true}
               />
               <img src={pentagon} alt="pentagon" className="game-bonus__pentagon" />
             </div>

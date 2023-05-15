@@ -31,11 +31,6 @@
   font-size: 58px;
 }
 
-@media (max-width: 1024px) {
-  .border {
-    margin-top: 15%;
-  }
-}
 @media (max-width: 768px) {
   .border {
     width: 80%;

@@ -7,6 +7,8 @@
   z-index: 2;
   box-shadow: 0 8px 0 0 hsl(261, 50%, 49%);
   position: relative;
+}
+.btn-lizard_bonus {
   top: 250px;
   left: -320px;
 }
@@ -40,11 +42,31 @@
   .btn-lizard {
     width: 125px;
     height: 120px;
-    left: 5px;
-    top: -20px;
+  }
+  .btn-lizard_bonus {
+    left: -120px;
+    top: 100px;
   }
   .btn-lizard__background {
     width: 80px;
     height: 80px;
+  }
+}
+@media (max-width: 580px) {
+  .btn-lizard {
+    width: 100px;
+    height: 100px;
+  }
+  .btn-lizard_bonus {
+    top: 120px;
+    left: 40px;
+  }
+  .btn-lizard__background {
+    width: 70px;
+    height: 70px;
+  }
+  .btn-lizard__image {
+    width: 40px;
+    height: 40px;
   }
 }/*# sourceMappingURL=index.css.map */

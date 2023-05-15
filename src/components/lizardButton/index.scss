@@ -9,15 +9,15 @@
   z-index: 2;
   box-shadow: 0 8px 0 0 $lizardShadow;
   position: relative;
-  top: 250px;
-  left: -320px;
+
+  &_bonus {
+    top: 250px;
+    left: -320px;
+  }
 
   &_result {
     top: 0;
     left: 0;
-  }
-
-  &_bonus {
   }
 
   &_hover {
@@ -50,12 +50,37 @@
   .btn-lizard {
     width: 125px;
     height: 120px;
-    left: 5px;
-    top: -20px;
+
+    &_bonus {
+      left: -120px;
+      top: 100px;
+    }
 
     &__background {
       width: 80px;
       height: 80px;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .btn-lizard {
+    width: 100px;
+    height: 100px;
+
+    &_bonus {
+      top: 120px;
+      left: 40px;
+    }
+
+    &__background {
+      width: 70px;
+      height: 70px;
+    }
+
+    &__image {
+      width: 40px;
+      height: 40px;
     }
   }
 }

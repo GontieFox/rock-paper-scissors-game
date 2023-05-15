@@ -48,8 +48,14 @@
   .btn-scissors {
     width: 125px;
     height: 120px;
+  }
+  .btn-scissors_classic {
     top: -140px;
     left: 190px;
+  }
+  .btn-scissors_bonus {
+    top: -160px;
+    left: 100px;
   }
   .btn-scissors__background {
     width: 80px;
@@ -65,6 +71,28 @@
     position: relative;
     top: -110px;
     left: 210px;
+  }
+  .btn-scissors__background {
+    width: 70px;
+    height: 70px;
+  }
+  .btn-scissors__image {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 580px) {
+  .btn-scissors {
+    width: 100px;
+    height: 100px;
+  }
+  .btn-scissors_classic {
+    top: 30px;
+    left: -10px;
+  }
+  .btn-scissors_bonus {
+    top: -30px;
+    left: -90px;
   }
   .btn-scissors__background {
     width: 70px;

@@ -57,8 +57,16 @@
   .btn-rock {
     width: 125px;
     height: 120px;
-    top: 160px;
-    left: -30px;
+
+    &_classic {
+      top: 160px;
+      left: -30px;
+    }
+
+    &_bonus {
+      top: 225px;
+      left: 60px;
+    }
 
     &__background {
       width: 80px;
@@ -76,6 +84,33 @@
       position: relative;
       top: 150px;
       left: -5px;
+    }
+
+    &__background {
+      width: 70px;
+      height: 70px;
+    }
+
+    &__image {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .btn-rock {
+    width: 100px;
+    height: 100px;
+
+    &_classic {
+      top: 170px;
+      left: 10px;
+    }
+
+    &_bonus {
+      top: 220px;
+      left: 80px;
     }
 
     &__background {

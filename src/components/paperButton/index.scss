@@ -62,6 +62,11 @@
       left: 5px;
       top: -20px;
     }
+    
+    &_bonus {
+      top: 75px;
+      left: 240px;
+    }
 
     &__background {
       width: 80px;
@@ -79,6 +84,33 @@
       position: relative;
       top: 0px;
       left: 10px;
+    }
+
+    &__background {
+      width: 70px;
+      height: 70px;
+    }
+
+    &__image {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .btn-paper {
+    width: 100px;
+    height: 100px;
+
+    &_classic {
+      top: 30px;
+      left: 30px;
+    }
+
+    &_bonus {
+      top: 70px;
+      left: 230px;
     }
 
     &__background {

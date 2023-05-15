@@ -151,7 +151,7 @@
   .block-classic {
     &_active {
       position: absolute;
-      top: 180px;
+      top: 45%;
       left: 50%;
       transform: translate(-50%);
     }
@@ -266,5 +266,26 @@
 @media (max-height: 768px) and (max-width: 768px) {
   .user-classic {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .game-classic {
+
+    &__triangle {
+      width: 200px;
+    }
+  }
+
+  .circle-classic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .block-classic {
+
+    &_active {
+      top: 130px;
+    }
   }
 }

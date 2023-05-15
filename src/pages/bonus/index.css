@@ -37,12 +37,12 @@
 }
 .btn-bonus__return {
   position: absolute;
-  top: 90%;
+  top: 93%;
   right: 280px;
 }
 .btn-bonus__rules {
   position: absolute;
-  top: 90%;
+  top: 93%;
   right: 100px;
 }
 .btn-bonus:hover {
@@ -134,9 +134,9 @@
   .result-bonus__text {
     width: 150px;
   }
-  .result-bonus_active {
+  .block-bonus_active {
     position: absolute;
-    top: 180px;
+    top: 45%;
     left: 50%;
     transform: translate(-50%);
   }
@@ -149,7 +149,7 @@
   .game-bonus {
     width: 320px;
   }
-  .game-bonus__triangle {
+  .game-bonus__pentagon {
     width: 260px;
   }
   .circle-bonus {
@@ -223,5 +223,11 @@
 @media (max-height: 768px) and (max-width: 768px) {
   .user-bonus {
     margin-right: 0;
+  }
+}
+@media (max-width: 580px) {
+  .circle-bonus {
+    width: 100px;
+    height: 100px;
   }
 }/*# sourceMappingURL=index.css.map */

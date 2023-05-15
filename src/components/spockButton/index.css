@@ -9,6 +9,8 @@
   z-index: 2;
   box-shadow: 0 8px 0 0 hsl(189, 52%, 39%);
   position: relative;
+}
+.btn-spock_bonus {
   top: -90px;
   left: 70px;
 }
@@ -42,11 +44,31 @@
   .btn-spock {
     width: 125px;
     height: 120px;
-    left: 5px;
-    top: -20px;
+  }
+  .btn-spock_bonus {
+    left: -50px;
+    top: -170px;
   }
   .btn-spock__background {
     width: 80px;
     height: 80px;
+  }
+}
+@media (max-width: 580px) {
+  .btn-spock {
+    width: 100px;
+    height: 100px;
+  }
+  .btn-spock_bonus {
+    top: -30px;
+    left: -110px;
+  }
+  .btn-spock__background {
+    width: 70px;
+    height: 70px;
+  }
+  .btn-spock__image {
+    width: 40px;
+    height: 40px;
   }
 }/*# sourceMappingURL=index.css.map */
