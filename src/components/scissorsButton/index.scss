@@ -59,12 +59,14 @@
     height: 120px;
 
     &_classic {
+      position: relative;
       top: -140px;
       left: 190px;
     }
 
     &_bonus {
-      top: -160px;
+      position: relative;
+      top: -150px;
       left: 100px;
     }
 
@@ -109,7 +111,7 @@
     }
 
     &_bonus {
-      top: -30px;
+      top: -10px;
       left: -90px;
     }
 

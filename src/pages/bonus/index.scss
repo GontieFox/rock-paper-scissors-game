@@ -197,8 +197,9 @@
 @media (max-height: 768px) {
   .game-bonus {
     margin-bottom: 25%;
+    margin-top: 5%;
 
-    &__triangle {
+    &__pentagon {
       height: 200px;
     }
   }
@@ -244,13 +245,13 @@
 
   .btn-bonus {
     &__return {
-      top: 83%;
+      top: 86%;
       left: 50%;
       transform: translate(-50%);
     }
 
     &__rules {
-      top: 91%;
+      top: 93%;
       left: 50%;
       transform: translate(-50%);
     }
