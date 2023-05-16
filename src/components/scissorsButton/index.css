@@ -85,20 +85,20 @@
 }
 @media (max-width: 580px) {
   .btn-scissors {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
   .btn-scissors_classic {
     top: 30px;
-    left: -10px;
+    left: 10px;
   }
   .btn-scissors_bonus {
-    top: -10px;
-    left: -90px;
+    top: 0;
+    left: -65px;
   }
   .btn-scissors__background {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
   .btn-scissors__image {
     width: 40px;

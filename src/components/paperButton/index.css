@@ -83,20 +83,20 @@
 }
 @media (max-width: 580px) {
   .btn-paper {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
   .btn-paper_classic {
     top: 30px;
-    left: 30px;
+    left: 50px;
   }
   .btn-paper_bonus {
     top: 70px;
     left: 220px;
   }
   .btn-paper__background {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
   .btn-paper__image {
     width: 40px;

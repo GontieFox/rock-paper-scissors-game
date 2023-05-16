@@ -211,7 +211,7 @@
     padding: 10px 40px;
   }
   .btn-classic__return {
-    top: 83%;
+    top: 82%;
     left: 50%;
     transform: translate(-50%);
   }
@@ -236,8 +236,8 @@
     width: 200px;
   }
   .circle-classic {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
   .block-classic_active {
     top: 110px;

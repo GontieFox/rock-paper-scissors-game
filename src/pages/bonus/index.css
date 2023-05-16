@@ -180,7 +180,7 @@
     margin-top: 5%;
   }
   .game-bonus__pentagon {
-    height: 200px;
+    width: 200px;
   }
   .circle-bonus {
     width: 110px;
@@ -212,12 +212,12 @@
     padding: 10px 40px;
   }
   .btn-bonus__return {
-    top: 86%;
+    top: 83%;
     left: 50%;
     transform: translate(-50%);
   }
   .btn-bonus__rules {
-    top: 93%;
+    top: 92%;
     left: 50%;
     transform: translate(-50%);
   }
@@ -234,7 +234,7 @@
 }
 @media (max-width: 580px) {
   .circle-bonus {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
 }/*# sourceMappingURL=index.css.map */

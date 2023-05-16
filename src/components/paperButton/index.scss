@@ -100,12 +100,12 @@
 
 @media (max-width: 580px) {
   .btn-paper {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 
     &_classic {
       top: 30px;
-      left: 30px;
+      left: 50px;
     }
 
     &_bonus {
@@ -114,8 +114,8 @@
     }
 
     &__background {
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
     }
 
     &__image {

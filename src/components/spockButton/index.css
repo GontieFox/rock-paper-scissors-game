@@ -56,16 +56,16 @@
 }
 @media (max-width: 580px) {
   .btn-spock {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
   .btn-spock_bonus {
-    top: -30px;
-    left: -100px;
+    top: -20px;
+    left: -80px;
   }
   .btn-spock__background {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
   .btn-spock__image {
     width: 40px;

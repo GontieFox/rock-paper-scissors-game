@@ -83,20 +83,20 @@
 }
 @media (max-width: 580px) {
   .btn-rock {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
   .btn-rock_classic {
-    top: 170px;
-    left: 10px;
+    top: 150px;
+    left: 25px;
   }
   .btn-rock_bonus {
-    top: 200px;
+    top: 180px;
     left: 80px;
   }
   .btn-rock__background {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
   .btn-rock__image {
     width: 40px;
