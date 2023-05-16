@@ -148,6 +148,14 @@
     }
   }
 
+  .count_win {
+    font-size: 42px;
+  }
+
+  .count_lose {
+    font-size: 42px;
+  }
+
   .block-classic {
     &_active {
       position: absolute;
@@ -271,7 +279,6 @@
 
 @media (max-width: 580px) {
   .game-classic {
-
     &__triangle {
       width: 200px;
     }
@@ -283,7 +290,6 @@
   }
 
   .block-classic {
-
     &_active {
       top: 130px;
     }

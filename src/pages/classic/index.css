@@ -134,6 +134,12 @@
   .result-classic__text {
     width: 150px;
   }
+  .count_win {
+    font-size: 42px;
+  }
+  .count_lose {
+    font-size: 42px;
+  }
   .block-classic_active {
     position: absolute;
     top: 45%;
