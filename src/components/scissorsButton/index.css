@@ -88,7 +88,7 @@
     height: 40px;
   }
 }
-@media (max-width: 580px) {
+@media (max-width: 580px) and (max-height: 768px) {
   .btn-scissors {
     width: 80px;
     height: 80px;
@@ -96,6 +96,28 @@
   .btn-scissors_classic {
     top: 30px;
     left: 10px;
+  }
+  .btn-scissors_bonus {
+    top: 20px;
+    left: -40px;
+  }
+  .btn-scissors__background {
+    width: 50px;
+    height: 50px;
+  }
+  .btn-scissors__image {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 580px) {
+  .btn-scissors {
+    width: 80px;
+    height: 80px;
+  }
+  .btn-scissors_classic {
+    top: 30px;
+    left: 40px;
   }
   .btn-scissors_bonus {
     top: 20px;
