@@ -204,8 +204,8 @@
 
 @media (max-height: 768px) {
   .game-bonus {
-    margin-top: 10px;
-    margin-bottom: 7%;
+    margin-top: 0;
+    margin-bottom: 15%;
 
     &__pentagon {
       width: 200px;
@@ -219,7 +219,7 @@
   }
 
   .result-bonus {
-    margin: auto;
+    margin-top: 10px;
 
     &__text {
       margin-bottom: 30px;
@@ -280,7 +280,7 @@
 
 @media (max-width: 580px) {
   .circle-bonus {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
   }
 }

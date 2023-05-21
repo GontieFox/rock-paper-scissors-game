@@ -105,8 +105,8 @@
 
 @media (max-width: 580px) {
   .btn-rock {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
 
     &_classic {
       top: 150px;
@@ -114,18 +114,18 @@
     }
 
     &_bonus {
-      top: 180px;
-      left: 80px;
+      top: 185px;
+      left: 110px;
     }
 
     &__background {
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
     }
 
     &__image {
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
     }
   }
 }

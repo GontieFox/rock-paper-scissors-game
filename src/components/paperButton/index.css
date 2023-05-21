@@ -88,23 +88,23 @@
 }
 @media (max-width: 580px) {
   .btn-paper {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
   }
   .btn-paper_classic {
     top: 30px;
     left: 40px;
   }
   .btn-paper_bonus {
-    top: 70px;
+    top: 80px;
     left: 220px;
   }
   .btn-paper__background {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
   .btn-paper__image {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 }/*# sourceMappingURL=index.css.map */

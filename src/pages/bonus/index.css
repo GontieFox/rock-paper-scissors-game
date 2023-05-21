@@ -176,8 +176,8 @@
 }
 @media (max-height: 768px) {
   .game-bonus {
-    margin-top: 10px;
-    margin-bottom: 7%;
+    margin-top: 0;
+    margin-bottom: 15%;
   }
   .game-bonus__pentagon {
     width: 200px;
@@ -188,7 +188,7 @@
     margin: auto;
   }
   .result-bonus {
-    margin: auto;
+    margin-top: 10px;
   }
   .result-bonus__text {
     margin-bottom: 30px;
@@ -234,7 +234,7 @@
 }
 @media (max-width: 580px) {
   .circle-bonus {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
   }
 }/*# sourceMappingURL=index.css.map */
