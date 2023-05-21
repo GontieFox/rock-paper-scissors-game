@@ -176,7 +176,8 @@
 }
 @media (max-height: 768px) {
   .game-classic {
-    margin-bottom: 25%;
+    margin-top: 10px;
+    margin-bottom: 5%;
   }
   .game-classic__triangle {
     height: 200px;

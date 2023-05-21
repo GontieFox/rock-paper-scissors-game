@@ -63,6 +63,29 @@
   }
 }
 
+@media (max-height: 768px) {
+  .btn-lizard {
+    width: 90px;
+    height: 90px;
+
+    &_bonus {
+      position: relative;
+      top: 100px;
+      left: 40px;
+    }
+
+    &__background {
+      width: 60px;
+      height: 60px;
+    }
+
+    &__image {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
 @media (max-width: 580px) {
   .btn-lizard {
     width: 90px;

@@ -77,18 +77,23 @@
 
 @media (max-height: 768px) {
   .btn-rock {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
 
     &_classic {
       position: relative;
-      top: 150px;
-      left: -5px;
+      top: 160px;
+      left: 25px;
+    }
+
+    &_bonus {
+      top: 200px;
+      left: 80px;
     }
 
     &__background {
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
     }
 
     &__image {

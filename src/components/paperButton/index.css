@@ -64,17 +64,22 @@
 }
 @media (max-height: 768px) {
   .btn-paper {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
   }
   .btn-paper_classic {
     position: relative;
-    top: 0px;
-    left: 10px;
+    top: 30px;
+    left: 30px;
+  }
+  .btn-paper_bonus {
+    position: relative;
+    top: 80px;
+    left: 220px;
   }
   .btn-paper__background {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
   .btn-paper__image {
     width: 40px;
@@ -88,7 +93,7 @@
   }
   .btn-paper_classic {
     top: 30px;
-    left: 50px;
+    left: 40px;
   }
   .btn-paper_bonus {
     top: 70px;

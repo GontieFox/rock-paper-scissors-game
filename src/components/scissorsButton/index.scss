@@ -79,18 +79,24 @@
 
 @media (max-height: 768px) {
   .btn-scissors {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
 
     &_classic {
       position: relative;
-      top: -110px;
-      left: 210px;
+      top: 30px;
+      left: 20px;
+    }
+
+    &_bonus {
+      position: relative;
+      top: 10px;
+      left: -90px;
     }
 
     &__background {
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
     }
 
     &__image {

@@ -77,18 +77,24 @@
 
 @media (max-height: 768px) {
   .btn-paper {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
 
     &_classic {
       position: relative;
-      top: 0px;
-      left: 10px;
+      top: 30px;
+      left: 30px;
+    }
+
+    &_bonus {
+      position: relative;
+      top: 80px;
+      left: 220px;
     }
 
     &__background {
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
     }
 
     &__image {
@@ -105,7 +111,7 @@
 
     &_classic {
       top: 30px;
-      left: 50px;
+      left: 40px;
     }
 
     &_bonus {

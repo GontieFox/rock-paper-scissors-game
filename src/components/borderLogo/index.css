@@ -50,10 +50,26 @@
   }
   .rules-logo {
     height: 80px;
+    width: 130px;
   }
 }
 @media (max-height: 768px) {
   .border {
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    padding: 10px;
+    height: 90px;
+  }
+  .score__subtitle {
+    font-size: 14px;
+  }
+  .score__count {
+    font-size: 40px;
+  }
+  .rules-logo {
+    height: 90px;
+  }
+  .score {
+    height: 90px;
+    width: 120px;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -176,8 +176,8 @@
 }
 @media (max-height: 768px) {
   .game-bonus {
-    margin-bottom: 25%;
-    margin-top: 1%;
+    margin-top: 10px;
+    margin-bottom: 7%;
   }
   .game-bonus__pentagon {
     width: 200px;

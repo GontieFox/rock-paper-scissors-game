@@ -54,6 +54,25 @@
     height: 80px;
   }
 }
+@media (max-height: 768px) {
+  .btn-spock {
+    width: 90px;
+    height: 90px;
+  }
+  .btn-spock_bonus {
+    position: relative;
+    top: -20px;
+    left: -100px;
+  }
+  .btn-spock__background {
+    width: 60px;
+    height: 60px;
+  }
+  .btn-spock__image {
+    width: 40px;
+    height: 40px;
+  }
+}
 @media (max-width: 580px) {
   .btn-spock {
     width: 90px;

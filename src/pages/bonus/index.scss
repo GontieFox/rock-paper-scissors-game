@@ -181,7 +181,7 @@
     }
   }
 
-  .circle-bonus{
+  .circle-bonus {
     width: 125px;
     height: 120px;
     margin: auto;
@@ -204,8 +204,8 @@
 
 @media (max-height: 768px) {
   .game-bonus {
-    margin-bottom: 25%;
-    margin-top: 1%;
+    margin-top: 10px;
+    margin-bottom: 7%;
 
     &__pentagon {
       width: 200px;
@@ -235,7 +235,7 @@
     margin: auto;
   }
 
-  .block-bonus{
+  .block-bonus {
     &_active {
       top: 100px;
     }
