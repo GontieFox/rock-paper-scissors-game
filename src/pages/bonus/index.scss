@@ -204,17 +204,24 @@
 
 @media (max-height: 768px) {
   .game-bonus {
-    margin-top: 0;
-    margin-bottom: 15%;
+    margin-top: 10px;
 
     &__pentagon {
       width: 200px;
     }
   }
 
+  .count_win {
+    font-size: 40px;
+  }
+
+  .count_lose {
+    font-size: 40px;
+  }
+
   .circle-bonus {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     margin: auto;
   }
 
@@ -289,5 +296,12 @@
     &__pentagon {
       width: 200px;
     }
+  }
+}
+
+@media (max-height: 580px) {
+  .game-bonus {
+    margin-top: 0;
+    margin-bottom: 7%;
   }
 }
